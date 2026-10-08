@@ -1,0 +1,223 @@
+{
+  "created": "2026-10-08T14:34:02.029267",
+  "total_notes": 578,
+  "batch_size": 25,
+  "batches": [
+    {
+      "batch": 1,
+      "folder": "substack_notes_export\\batches\\batch_001",
+      "count": 25,
+      "start_id": "355566499",
+      "end_id": "353712918",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 2,
+      "folder": "substack_notes_export\\batches\\batch_002",
+      "count": 25,
+      "start_id": "351687136",
+      "end_id": "333991149",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 3,
+      "folder": "substack_notes_export\\batches\\batch_003",
+      "count": 25,
+      "start_id": "332910443",
+      "end_id": "329351589",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 4,
+      "folder": "substack_notes_export\\batches\\batch_004",
+      "count": 25,
+      "start_id": "329348512",
+      "end_id": "326357191",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 5,
+      "folder": "substack_notes_export\\batches\\batch_005",
+      "count": 25,
+      "start_id": "326296648",
+      "end_id": "288337888",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 6,
+      "folder": "substack_notes_export\\batches\\batch_006",
+      "count": 25,
+      "start_id": "287778452",
+      "end_id": "281899876",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 7,
+      "folder": "substack_notes_export\\batches\\batch_007",
+      "count": 25,
+      "start_id": "281882712",
+      "end_id": "279371251",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 8,
+      "folder": "substack_notes_export\\batches\\batch_008",
+      "count": 25,
+      "start_id": "279355493",
+      "end_id": "274935362",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 9,
+      "folder": "substack_notes_export\\batches\\batch_009",
+      "count": 25,
+      "start_id": "274870577",
+      "end_id": "271943420",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 10,
+      "folder": "substack_notes_export\\batches\\batch_010",
+      "count": 25,
+      "start_id": "271474279",
+      "end_id": "270273714",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 11,
+      "folder": "substack_notes_export\\batches\\batch_011",
+      "count": 25,
+      "start_id": "270108898",
+      "end_id": "266499508",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 12,
+      "folder": "substack_notes_export\\batches\\batch_012",
+      "count": 25,
+      "start_id": "266499180",
+      "end_id": "264653067",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 13,
+      "folder": "substack_notes_export\\batches\\batch_013",
+      "count": 25,
+      "start_id": "264652308",
+      "end_id": "257370215",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 14,
+      "folder": "substack_notes_export\\batches\\batch_014",
+      "count": 25,
+      "start_id": "254702519",
+      "end_id": "248209162",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 15,
+      "folder": "substack_notes_export\\batches\\batch_015",
+      "count": 25,
+      "start_id": "248208295",
+      "end_id": "237137522",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 16,
+      "folder": "substack_notes_export\\batches\\batch_016",
+      "count": 25,
+      "start_id": "237003208",
+      "end_id": "229863963",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 17,
+      "folder": "substack_notes_export\\batches\\batch_017",
+      "count": 25,
+      "start_id": "229851453",
+      "end_id": "226139460",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 18,
+      "folder": "substack_notes_export\\batches\\batch_018",
+      "count": 25,
+      "start_id": "226131486",
+      "end_id": "222676338",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 19,
+      "folder": "substack_notes_export\\batches\\batch_019",
+      "count": 25,
+      "start_id": "222667310",
+      "end_id": "219020696",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 20,
+      "folder": "substack_notes_export\\batches\\batch_020",
+      "count": 25,
+      "start_id": "218790974",
+      "end_id": "215455618",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 21,
+      "folder": "substack_notes_export\\batches\\batch_021",
+      "count": 25,
+      "start_id": "215382729",
+      "end_id": "213347833",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 22,
+      "folder": "substack_notes_export\\batches\\batch_022",
+      "count": 25,
+      "start_id": "213043680",
+      "end_id": "207905780",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 23,
+      "folder": "substack_notes_export\\batches\\batch_023",
+      "count": 25,
+      "start_id": "207886786",
+      "end_id": "160394524",
+      "titled": 0,
+      "completed": false
+    },
+    {
+      "batch": 24,
+      "folder": "substack_notes_export\\batches\\batch_024",
+      "count": 3,
+      "start_id": "116168222",
+      "end_id": "100808821",
+      "titled": 0,
+      "completed": false
+    }
+  ]
+}
