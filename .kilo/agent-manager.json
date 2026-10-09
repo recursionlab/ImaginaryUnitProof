@@ -1,14 +1,63 @@
 {
-  "worktrees": {},
-  "sessions": {},
+  "worktrees": {
+    "wt-1791491628962-1": {
+      "branch": "lush-forest",
+      "path": "d:\\agentsandbox\\.kilo\\worktrees\\lush-forest",
+      "parentBranch": "master",
+      "createdAt": "2026-10-08T20:33:48.963Z",
+      "branchOwned": true,
+      "autoNameSessionId": "ses_ee2c71504ffeSds2cSyCoh780L",
+      "autoNamePromptCount": 2
+    },
+    "wt-1791550767485-2": {
+      "branch": "frosted-quicksand",
+      "path": "d:\\agentsandbox\\.kilo\\worktrees\\frosted-quicksand",
+      "parentBranch": "master",
+      "createdAt": "2026-10-09T12:59:27.485Z",
+      "groupId": "grp-1791550765787",
+      "branchOwned": true,
+      "autoNameSessionId": "ses_edf408717ffea8dFRFKXSWA27i",
+      "autoNamePromptCount": 2
+    },
+    "wt-1791550770196-3": {
+      "branch": "lydian-profit",
+      "path": "d:\\agentsandbox\\.kilo\\worktrees\\lydian-profit",
+      "parentBranch": "master",
+      "createdAt": "2026-10-09T12:59:30.196Z",
+      "groupId": "grp-1791550765787",
+      "branchOwned": true,
+      "autoNameSessionId": "ses_edf407f4bffen30I0mrheRDrh6",
+      "autoNamePromptCount": 2
+    }
+  },
+  "sessions": {
+    "ses_ee2c71504ffeSds2cSyCoh780L": {
+      "worktreeId": "wt-1791491628962-1",
+      "createdAt": "2026-10-08T20:33:52.220Z"
+    },
+    "ses_edf408717ffea8dFRFKXSWA27i": {
+      "worktreeId": "wt-1791550767485-2",
+      "createdAt": "2026-10-09T12:59:42.108Z"
+    },
+    "ses_edf407f4bffen30I0mrheRDrh6": {
+      "worktreeId": "wt-1791550770196-3",
+      "createdAt": "2026-10-09T12:59:43.725Z"
+    }
+  },
   "tabOrder": {
     "local": [
       "pending:6a830cc2-4870-464d-bc60-67b1de574fbb"
     ]
   },
+  "worktreeOrder": [
+    "wt-1791491628962-1",
+    "wt-1791550767485-2",
+    "wt-1791550770196-3"
+  ],
   "sessionsCollapsed": true,
   "activeTarget": {
     "projectId": "prj-02f6d8f867db",
-    "kind": "local"
+    "kind": "session",
+    "sessionId": "ses_edf407f4bffen30I0mrheRDrh6"
   }
 }
