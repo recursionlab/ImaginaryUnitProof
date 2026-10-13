@@ -1,0 +1,172 @@
+digraph MetaKernelDependencies {
+    rankdir=TB;
+    node [shape=box, style=filled];
+    
+    // Dependency layers as subgraphs
+    subgraph cluster_D0 { label="D₀: Standard Math Primitives"; color=lightgray; }
+    subgraph cluster_D1 { label="D₁: Declaration Grammar"; color=lightblue; }
+    subgraph cluster_D2 { label="D₂: Core Objects & Indices"; color=lightgreen; }
+    subgraph cluster_D3 { label="D₃: Execution / Trace"; color=lightyellow; }
+    subgraph cluster_D4 { label="D₄: Closure & Residue"; color=lightcoral; }
+    subgraph cluster_D5 { label="D₅: Admissibility / Witness"; color=lightpink; }
+    subgraph cluster_D6 { label="D₆: FRE / Op Rule Comparison"; color=lightgoldenrod; }
+    subgraph cluster_D7 { label="D₇: Rule Transformation"; color=lightcyan; }
+    subgraph cluster_D8 { label="D₈: Invariant Relaxation / Capacity"; color=lightsalmon; }
+    subgraph cluster_D9 { label="D₉: Environment / Connection Update"; color=lightseagreen; }
+    subgraph cluster_D10 { label="D₁₀: Reconstruction / Ablation / Epistemic"; color=lavender; }
+
+    _partial__int__X__int__partial_ [label="∂∫(X)∫∂", fillcolor="lightblue"];
+    _int__partial__X__partial__int_ [label="∫∂(X)∂∫", fillcolor="lightblue"];
+    _partial__int__X__int__partial___leftrightarrow___int__partial__X__partial__int_ [label="∂∫(X)∫∂ ⇄ ∫∂(X)∂∫", fillcolor="lightblue"];
+    _Psi_₀ᵢUnus [label="Ψ₀ᵢUnus", fillcolor="lightgreen"];
+    _Omega_ [label="Ω", fillcolor="lightgreen"];
+    _Sigma_ [label="Σ", fillcolor="lightgreen"];
+    θ [label="θ", fillcolor="lightgreen"];
+    ε [label="ε", fillcolor="lightgreen"];
+    𝔗_t [label="𝔗ₜ", fillcolor="lightgreen"];
+    X_t [label="Xₜ", fillcolor="lightgreen"];
+    𝔈_t [label="𝔈ₜ", fillcolor="lightgreen"];
+    κ_t [label="κₜ", fillcolor="lightgreen"];
+    Conn_t [label="Connₜ", fillcolor="lightgreen"];
+    𝓜 [label="𝓜", fillcolor="lightgreen"];
+    __ic [label="?₍ᵢ:𝚌₎", fillcolor="lightgreen"];
+    Retro_Precursor_X_ [label="Retro-Precursor[X]", fillcolor="lightcoral"];
+    _to_ᶠ [label="→ᶠ", fillcolor="lightyellow"];
+    _circlearrowleft__𝔗_t_mid_𝔈_t_mid_κ_t_X [label="↺₍𝔗ₜ∣𝔈ₜ∣κₜ₎X", fillcolor="lightyellow"];
+    Coalesce_leftarrow_ [label="Coalesce←", fillcolor="lightcoral"];
+    Generate_to_ [label="Generate→", fillcolor="lightcoral"];
+    Möb_X_ [label="Möb(X)", fillcolor="lightcoral"];
+    _Gamma_𝚌_X_ [label="Γ𝚌(X)", fillcolor="lightcoral"];
+    _nabla__X_ [label="∇(X)", fillcolor="lightcoral"];
+    _sup_ [label="⊃", fillcolor="lightseagreen"];
+    _oslash__X_ [label="⊘(X)", fillcolor="lightcoral"];
+    Shadow [label="Shadow", fillcolor="lightgreen"];
+    Voidₑₙₐᵦₗᵢₙg_X_ [label="Voidₑₙₐᵦₗᵢₙg(X)", fillcolor="lightcoral"];
+    _circ__ᵢₙ_ [label="∘₍ᵢₙ₎", fillcolor="lightcoral"];
+    Trace_X_ [label="Trace(X)", fillcolor="lightcoral"];
+    Exec_t [label="Execₜ", fillcolor="lightgreen"];
+    O_t [label="Oₜ", fillcolor="lightgreen"];
+    R_t_⁰_ [label="Rₜ⁽⁰⁾", fillcolor="lightgreen"];
+    ρ_l_A_C_ [label="ρ_l(A;C)", fillcolor="lightcoral"];
+    ρₑₓₑᶜ [label="ρₑₓₑᶜ", fillcolor="lightcoral"];
+    ρᶜᵒⁿⁿ [label="ρᶜᵒⁿⁿ", fillcolor="lightcoral"];
+    ρᵉⁿᵛ [label="ρᵉⁿᵛ", fillcolor="lightcoral"];
+    R_tᵉˣᵉᶜ [label="Rₜᵉˣᵉᶜ", fillcolor="lightgreen"];
+    R_tᶜᵒⁿⁿ [label="Rₜᶜᵒⁿⁿ", fillcolor="lightgreen"];
+    R_tᵉⁿᵛ [label="Rₜᵉⁿᵛ", fillcolor="lightgreen"];
+    Classᵣᵘˡᵉ_A_𝔗_t_ [label="Classᵣᵘˡᵉ(A;𝔗ₜ)", fillcolor="lightcoral"];
+    R_tʳᵘˡᵉ [label="Rₜʳᵘˡᵉ", fillcolor="lightgreen"];
+    R_t [label="Rₜ", fillcolor="lightgreen"];
+    R₃ᶜᵒⁿⁿ [label="R₃ᶜᵒⁿⁿ", fillcolor="lightgreen"];
+    Closure_state [label="Closure_state", fillcolor="lightcoral"];
+    Closure_conn [label="Closure_conn", fillcolor="lightcoral"];
+    Closure_env [label="Closure_env", fillcolor="lightcoral"];
+    Closure_frozen [label="Closure_frozen", fillcolor="lightcoral"];
+    Closure [label="Closure", fillcolor="lightcoral"];
+    Adm_Y_ [label="Adm(Y)", fillcolor="lightcoral"];
+    W_t [label="Wₜ", fillcolor="lightgreen"];
+    Wₑ_t [label="Wₑₜ", fillcolor="lightgreen"];
+    W_t_vdash_Adm_Y_ [label="Wₜ⊢Adm(Y)", fillcolor="lightseagreen"];
+    FRE_t_𝓜_ [label="FREₜ(𝓜)", fillcolor="lightcoral"];
+    Obsᵗᵉˢᵗ_t__t_ₙ [label="Obsᵗᵉˢᵗₜ:ₜ₊ₙ", fillcolor="lightgreen"];
+    _Upsilon__A_B_C_D_E_F_ [label="Υ(A,B,C,D,E,F)", fillcolor="lightcoral"];
+    _Delta_𝔗_t [label="Δ𝔗ₜ", fillcolor="lightgreen"];
+    _Delta_²𝔗_t [label="Δ²𝔗ₜ", fillcolor="lightgreen"];
+    𝔗_t_₁ [label="𝔗ₜ₊₁", fillcolor="lightgreen"];
+    RuleChange_t [label="RuleChangeₜ", fillcolor="lightcoral"];
+    Reach_t [label="Reachₜ", fillcolor="lightgreen"];
+    Path_𝔈_t_d_ [label="Path(𝔈ₜ,d)", fillcolor="lightseagreen"];
+    ObservedPath_t [label="ObservedPathₜ", fillcolor="lightgreen"];
+    Update_A_B_C_ [label="Update(A,B,C)", fillcolor="lightcoral"];
+    Updateκ_A_B_C_ [label="Updateκ(A,B,C)", fillcolor="lightcoral"];
+    κ_A_B_ [label="κ(A,B)", fillcolor="lightcoral"];
+    Conn_A_B_ [label="Conn(A,B)", fillcolor="lightseagreen"];
+    ConnCurvature_A_B_C_ [label="ConnCurvature(A,B,C)", fillcolor="lightcoral"];
+    _Phi__D_D_ [label="Φ_D(D)", fillcolor="lightcoral"];
+    _Phi__D_D₁___κ__Phi__D_D₂_ [label="Φ_D(D₁)≋₍κ₎Φ_D(D₂)", fillcolor="lightseagreen"];
+    _ [label="≋", fillcolor="lightseagreen"];
+    _Phi__D_D__𝔈_t [label="Φ_D(D)↪𝔈ₜ", fillcolor="lightseagreen"];
+    χ_A_B_ [label="χ(A,B)", fillcolor="lightcoral"];
+    _Gamma_𝚌_A_ [label="Γ𝚌(A)", fillcolor="lightcoral"];
+    Coh₂_A_B_ [label="Coh₂(A,B)", fillcolor="lightcoral"];
+    Coh₃_A_B_C_ [label="Coh₃(A,B,C)", fillcolor="lightcoral"];
+    𝔇₃ [label="𝔇₃", fillcolor="lightgreen"];
+    Residue₃_A_B_C_ [label="Residue₃(A,B,C)", fillcolor="lightcoral"];
+    κ₃ [label="κ₃", fillcolor="lightgreen"];
+    Identityₘₑₐₙᵢₙg [label="Identityₘₑₐₙᵢₙg", fillcolor="lightcoral"];
+    Identityₛ_tᵣᵤ𝚌_tᵤᵣₑ [label="Identityₛₜᵣᵤ𝚌ₜᵤᵣₑ", fillcolor="lightcoral"];
+    Ablation_C_ [label="Ablation(C)", fillcolor="lightcoral"];
+    Ablation_R_tʳᵘˡᵉ_to__Upsilon___implies__not_RuleChange_t [label="Ablation(Rₜʳᵘˡᵉ→Υ)⇒¬RuleChangeₜ", fillcolor="lightcoral"];
+    σ_D_ [label="σ(D)", fillcolor="lightcoral"];
+    Mnēmaic [label="Mnēmaic", fillcolor="lightblue"];
+    Imagined [label="Imagined", fillcolor="lightblue"];
+    A_to_ᶠB [label="A→ᶠB", fillcolor="lightblue"];
+    A_rightsquigarrow_B [label="A↝B", fillcolor="lightblue"];
+    A_leftrightarrow_B [label="A⇄B", fillcolor="lightblue"];
+    _ll_A_B_rr_ [label="⟦A/B⟧", fillcolor="lightblue"];
+    A_nRightarrow_B [label="A⇏B", fillcolor="lightblue"];
+    A_simeq_B [label="A≃B", fillcolor="lightblue"];
+    A__B [label="A:=B", fillcolor="lightblue"];
+    _la_A_mid_B_ra_ [label="⟨A∣B⟩", fillcolor="lightblue"];
+    _mid_ [label="∣", fillcolor="lightblue"];
+    _circ_ [label="∘", fillcolor="lightblue"];
+    _oplus_ [label="⊕", fillcolor="lightblue"];
+    _Theta__X_ [label="Θ(X)", fillcolor="lightcoral"];
+    _partial__int_𝔗_t_int__partial__to__int__partial_𝔗_t_₁_partial__int_ [label="∂∫𝔗ₜ∫∂→∫∂𝔗ₜ₊₁∂∫", fillcolor="lightblue"];
+    Inv_I_𝔗_ [label="Inv(I,𝔗)", fillcolor="lightcoral"];
+    Req_I_𝔗_ [label="Req(I,𝔗)", fillcolor="lightcoral"];
+    Relax_I_𝔗_t_𝔗_t_₁_ [label="Relax(I;𝔗ₜ,𝔗ₜ₊₁)", fillcolor="lightcoral"];
+    Capacity_𝔗_ [label="Capacity(𝔗)", fillcolor="lightgreen"];
+    Gain_G_𝔗_t_𝔗_t_₁_ [label="Gain(G;𝔗ₜ,𝔗ₜ₊₁)", fillcolor="lightcoral"];
+    TradeOff_t_I_G_ [label="TradeOffₜ(I,G)", fillcolor="lightcoral"];
+    _Delta_Inv_t [label="ΔInvₜ", fillcolor="lightgreen"];
+    t -> 𝔗_t [label="parameter"];
+    t -> X_t [label="parameter"];
+    t -> 𝔈_t [label="parameter"];
+    t -> κ_t [label="parameter"];
+    t -> Conn_t [label="parameter"];
+    𝔗_t -> __𝔗_t_𝔈_t_κ_t_X [label="parameter"];
+    𝔈_t -> __𝔗_t_𝔈_t_κ_t_X [label="parameter"];
+    κ_t -> __𝔗_t_𝔈_t_κ_t_X [label="parameter"];
+    t -> Exec_t [label="parameter"];
+    t -> O_t [label="parameter"];
+    t -> R_t_⁰_ [label="parameter"];
+    t -> R_tᵉˣᵉᶜ [label="parameter"];
+    t -> R_tᶜᵒⁿⁿ [label="parameter"];
+    t -> R_tᵉⁿᵛ [label="parameter"];
+    𝔗_t -> Classᵣᵘˡᵉ_A_𝔗_t_ [label="parameter"];
+    t -> R_tʳᵘˡᵉ [label="parameter"];
+    t -> R_t [label="parameter"];
+    𝔗_t -> Closure_state [label="parameter"];
+    X_t -> Closure_state [label="parameter"];
+    Adm_t -> Closure_state [label="parameter"];
+    Conn_t -> Closure_conn [label="parameter"];
+    κ_t -> Closure_conn [label="parameter"];
+    𝔈_t -> Closure_env [label="parameter"];
+    Adm_t -> Closure_env [label="parameter"];
+    𝔗_t -> Closure_frozen [label="parameter"];
+    X_t -> Closure_frozen [label="parameter"];
+    𝔈_t -> Closure_frozen [label="parameter"];
+    Adm_t -> Closure_frozen [label="parameter"];
+    𝓜 -> Closure_frozen [label="parameter"];
+    𝓜 -> Closure [label="parameter"];
+    t -> W_t [label="parameter"];
+    t -> Wₑ_t [label="parameter"];
+    𝓜 -> FRE_t_𝓜_ [label="parameter"];
+    t -> FRE_t_𝓜_ [label="parameter"];
+    t -> Obsᵗᵉˢᵗ_t__t_ₙ [label="parameter"];
+    t -> Δ𝔗_t [label="parameter"];
+    t -> Δ²𝔗_t [label="parameter"];
+    t -> 𝔗_t_₁ [label="parameter"];
+    t -> RuleChange_t [label="parameter"];
+    t -> Reach_t [label="parameter"];
+    𝔈_t -> Path_𝔈_t_d_ [label="parameter"];
+    t -> ObservedPath_t [label="parameter"];
+    𝔈_t -> Φ_D_D__𝔈_t [label="parameter"];
+    t -> Ablation_R_tʳᵘˡᵉ_Υ___RuleChange_t [label="parameter"];
+    𝔗_t -> __𝔗_t_____𝔗_t_₁__ [label="parameter"];
+    𝔗_t -> Relax_I_𝔗_t_𝔗_t_₁_ [label="parameter"];
+    𝔗_t -> Gain_G_𝔗_t_𝔗_t_₁_ [label="parameter"];
+    t -> TradeOff_t_I_G_ [label="parameter"];
+    t -> ΔInv_t [label="parameter"];
+}

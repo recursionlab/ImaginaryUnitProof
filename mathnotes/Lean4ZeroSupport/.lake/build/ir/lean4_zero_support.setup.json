@@ -1,0 +1,7 @@
+{"plugins": [],
+ "package": "lean4_zero_support",
+ "options": {},
+ "name": "lean4_zero_support",
+ "isModule": false,
+ "importArts": {},
+ "dynlibs": []}

@@ -1,0 +1,7 @@
+name = "lean4_zero_support"
+version = "0.1.0"
+packagesDir = ".lake/packages"
+
+[[require]]
+name = "lean4_zero_support"
+path = "Lean4ZeroSupport"

@@ -1,0 +1,10 @@
+Phase,Workstream,Deliverables,Exit gate,Priority,Depends on
+0,Contract and source repair,"Canonical vocabulary; correct automorphism table; typed residue vs epistemic gap; retire invalid entropy ratio","No central metric or algebra claim remains undefined but presented as result",P0,Source ledger
+1,Exact Cayley-Dickson reference engine,"R/C/H/O/S multiplication; conjugation and norm tests; associator; alternative identities; zero-divisor examples","Canonical tests and mutation-detection tests pass",P1,Phase 0
+2,8D slice registry/compiler,"Slice schema; embeddings; closure verifier; morphism contracts; partial composition checks","All admitted slices/compositions pass explicit predicates; rejected cases retain reason",P1,Phase 1
+3,Typed Self-Conjugation engine,"Transform/comparator/invariant/residue/side-channel/reconstruction contract and worked examples","Shows invariant retention can coexist with information loss; reconstruction limits explicit",P2,Phase 0-1
+4,Meta-field IR + MRMD,"Versioned schema; anchors/cairns/meta-cairns; relations; provenance graph; contradiction-preserving records","Source preserved; candidate links do not imply identity; provenance reconstructs",Phase 0-3
+5,Perchance proof of concept,"One imported or embedded compiled meta-field; share link; adapter manifest; independent output check","Cold-start replay and failure injection pass on actual generator",Phase 2-4
+6,Second generator hub,"Generic adapter API; support/loss matrix; one additional hub chosen on feasibility","Core IR remains platform-neutral and all losses are logged",Phase 4-5
+7,Symmetry descriptor/entropy study,"Automorphism references; zero-divisor-locus convention; declared measure; baseline/null models","Measure is robust and predicts held-out structure better than declared baseline",Phase 1-2
+8,Physical/thermodynamic bridge,"Explicit physical model, units, state/ensemble, coupling, conservation and testable observables","Independent expert can evaluate derivation; analogy alone is not accepted",Phase 7

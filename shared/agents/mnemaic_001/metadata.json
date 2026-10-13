@@ -1,0 +1,20 @@
+{
+  "agent_id": "mnemaic_001",
+  "template_id": "D",
+  "name": "Mnemaic Site Architect",
+  "role": "Build the H^1=0 crystalline vacuum / Mnemaic Site",
+  "deps": [
+    "A"
+  ],
+  "task": "Initialize H1=0 crystalline vacuum via Birkhoff factorization; integrate Heat Kernel coefficients; achieve ARC (Analytic Reality Closure); verify with spectral flow and Witten deformation",
+  "outputs": [
+    "shared/agents/mnemaic_001/output/main.py",
+    "shared/agents/mnemaic_001/output/test.py",
+    "shared/agents/mnemaic_001/output/spec.md"
+  ],
+  "validation": "FRE\u209c passes on held-out data; TradeOff produces Capacity gain; Ablation reveals causal structure; all claims tagged E/I/P/H",
+  "context_files": [],
+  "created": "2026-10-09T19:57:47.801539",
+  "status": "ready",
+  "epistemic_log": []
+}

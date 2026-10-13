@@ -1,0 +1,33 @@
+=== sanity ===
+e1^2 == -1 (level 2): True
+H fully associative: True
+O non-associative: True
+=== V1 ===
+identity Omega(a,b)c = -[a,b,c]+[b,a,c] on 200 random S-triples: True
+=== V2 ===
+H (4D): max|Omega(e_i,e_j)| = 0, nonzero pairs 0/9, zero pairs e.g. [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)]
+O (8D): max|Omega(e_i,e_j)| = 16, nonzero pairs 42/49, zero pairs e.g. [(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6)]
+S (16D): max|Omega(e_i,e_j)| = 48, nonzero pairs 210/225, zero pairs e.g. [(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6)]
+=== V4/V5 ===
+h2 == h1*tau ? False   (so the earlier 'Klein four' correction was WRONG)
+tau == h1*h2 ? False   (the notes' relation is also wrong)
+h2 == h1*tb (twisted twist) ? True
+<h1,tau,h2> alone: order=8 abelian=True (the octic group was already intrinsic)
+<h1,tau,tb>  order=8 abelian=True involutions=8  -> (Z/2)^3
+<h1,tau,h2,sig> order=32 abelian=False involutions=20
+sigma*tau == -tau*sigma : True
+-I in <h1,tau,h2> : False ; -I appears only with sigma : True
+sigma an algebra automorphism? False ; an ANTI-automorphism? False
+corrected relation  sigma L_i sigma = sign * L_{sigma(e_i)} : False
+notes' formula |sigma L sigma - (-L)| max err = 32 (fails as written)
+=== V6 ===
+O: max |[a,b,c]+[b,a,c]| = 0, max |cyclic sum| = 186
+S: max |[a,b,c]+[b,a,c]| = 190, max |cyclic sum| = 768
+=== V3 ===
+zero-divisor pairs among 480 2-sparse signed vectors: 672 (of 114960)
+example ZD pair: a = [ 1 10][-1 -1], b = [ 4 15][-1  1]
+triangles tested: 2100; law Omega(a,b)c = +[b,a,c] held: True
+  of 420 triangles, c*a == +/- [b,a,c] exactly: 0
+  c*a != 0 AND curvature != 0 : 2100
+  c*a != 0 BUT curvature == 0 : 0   <- counterexamples to 'c*a != 0 implies Omega != 0'
+  c*a == 0 BUT curvature != 0 : 0   <- counterexamples the other way

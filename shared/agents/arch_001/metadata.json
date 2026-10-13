@@ -1,0 +1,12 @@
+{
+  "agent_id": "arch_001",
+  "template_id": "A",
+  "name": "ONTOLOGY ARCHAEOLOGIST",
+  "deps": [],
+  "output_files": [
+    "shared/registry/operator_specs.json",
+    "shared/registry/dependency_graph.dot"
+  ],
+  "created": 1791591385.4637475,
+  "status": "pending"
+}

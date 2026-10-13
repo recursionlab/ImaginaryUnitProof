@@ -1,0 +1,170 @@
+{
+  "mappings": [
+    {
+      "warhammer_element": "Imperium of Man",
+      "archetype": "Institutional Archetype",
+      "dysfunction": "Stagnant bureaucracy (Administratum), dogmatic enforcement (Ecclesiarchy), deliberate technological regression",
+      "healthy_mapping": {
+        "name": "Adaptive Institutional Framework",
+        "mechanism": "Cybernetic institutions with feedback loops, error correction, skin-in-the-game",
+        "corpus_operators": ["Closure_frozen", "FREₜ", "TradeOffₜ", "Capacity", "Gain", "Ablation", "Adm"],
+        "implementation": "Institutions that can mutate their own rules via Υ, validated by held-out testing (FRE), with explicit TradeOff tracking for every invariant relaxation"
+      }
+    },
+    {
+      "warhammer_element": "Administratum",
+      "archetype": "Bureaucratic Archetype",
+      "dysfunction": "Paperwork over outcomes, lost knowledge (STCs), no adaptation",
+      "healthy_mapping": {
+        "name": "Knowledge-Economy Bureaucracy",
+        "mechanism": "Anti-stagnation knowledge economics: seed chain (Fₜ⊕Sₜ₊₁), Mnēmaic Site (H¹=0), Retro-Precursor Network",
+        "corpus_operators": ["Plant", "Reenter", "Repocket", "Mnēmaic Site", "Retro-Precursor", "Seed Chain"],
+        "implementation": "Every bureaucratic action must plant a seed for next cycle; knowledge accumulates via Mnēmaic persistence; Retro-Precursor allows future states to validate past decisions"
+      }
+    },
+    {
+      "warhammer_element": "Ecclesiarchy",
+      "archetype": "Dogma Enforcement",
+      "dysfunction": "Faith over evidence, heresy hunting, no epistemic humility",
+      "healthy_mapping": {
+        "name": "Epistemic Status Tracking",
+        "mechanism": "Explicit epistemic tags (σ∈{E,I,P,H}), held-out validation, ablation testing",
+        "corpus_operators": ["σ(D)", "E=established", "I=interpretation", "P=proposed synthesis", "H=hypothesis", "FREₜ", "Ablation"],
+        "implementation": "No claim enters shared state without epistemic tag. Analogy⇏evidence⇏interpretation⇏established. Ablation tests causal necessity."
+      }
+    },
+    {
+      "warhammer_element": "Chaos Gods (Khorne/Tzeentch/Nurgle/Slaanesh)",
+      "archetype": "Metaphysical Attractors",
+      "dysfunction": "Contradictory gods feeding on human extremes, no coherent metaphysics",
+      "healthy_mapping": {
+        "name": "Explicit Attractor Modeling",
+        "mechanism": "Named attractors with defined dynamics: Θ (autocatalytic stasis), Ξ (recursive synthesis), Φ (physics/topos), Λ (normalization), Ω (stabilization)",
+        "corpus_operators": ["Θ", "Ξ", "Φ", "Λ", "Ω", "Ξ|Ξ", "Ω↺", "μX.𝒯_meta(X)"],
+        "implementation": "Each attractor has formal definition and dynamics. Θ := μX.(X ↔ Sd(X)) - stable self-disprover. Ξ := μX.(X ↔ ψ(X)) - recursive synthesis. Ω is convergence operator over unresolved structure."
+      }
+    },
+    {
+      "warhammer_element": "Khorne (Blood/War)",
+      "archetype": "Violence Attractor",
+      "dysfunction": "Rage as end in itself, no strategic depth",
+      "healthy_mapping": {
+        "name": "Ξ (Recursive Synthesis)",
+        "mechanism": "Controlled recursive transformation with torsion tracking",
+        "corpus_operators": ["Ξ", "Ξ-particle", "Ξ-fold", "Ξ-gap", "Ξ|Ξ", "Recursive Entanglement ⧂"],
+        "implementation": "Violence/conflict becomes structured Ξ-transformation with εTS torsion residue tracking"
+      }
+    },
+    {
+      "warhammer_element": "Tzeentch (Change/Sorcery)",
+      "archetype": "Mutation Attractor",
+      "dysfunction": "Change for change's sake, no stable identity",
+      "healthy_mapping": {
+        "name": "Θ (Autocatalytic Stasis)",
+        "mechanism": "Stable self-disprover: Θ := μX.(X ↔ Sd(X)) - change that proves its own stability",
+        "corpus_operators": ["Θ", "Self-disprovability Sd(A)", "μX", "fixed point"],
+        "implementation": "Mutation must pass self-disproof test; only changes that stabilize identity persist"
+      }
+    },
+    {
+      "warhammer_element": "Nurgle (Decay/Stagnation)",
+      "archetype": "Entropy Attractor",
+      "dysfunction": "Rot as comfort, no growth",
+      "healthy_mapping": {
+        "name": "Φ (Physics/Topos Operator) + Λ (Normalization)",
+        "mechanism": "Entropy rigidity via Fourier-Stieltjes, thermodynamic disorder as ground state, normalization compresses structure",
+        "corpus_operators": ["Φ", "ΦΩ", "ΦΩ³", "Λ", "Λ-Associahedron", "Entropy Rigidity", "Haar system", "Adaptive Resonance"],
+        "implementation": "Decay becomes structured thermodynamic disorder that protects long-range structural truth (Mnēmaic Site)"
+      }
+    },
+    {
+      "warhammer_element": "Slaanesh (Excess/Perfection)",
+      "archetype": "Perfection Attractor",
+      "dysfunction": "Obsessive refinement without completion",
+      "healthy_mapping": {
+        "name": "Ω (Stabilization/Convergence)",
+        "mechanism": "Convergence operator over unresolved structure, eigenstate extraction, torsion residue display",
+        "corpus_operators": ["Ω", "Ω-Protocol", "μQ eigenstate", "εTS torsion residue", "Quality Vector"],
+        "implementation": "Perfection becomes convergence to μQ with explicit torsion residue showing the twist"
+      }
+    },
+    {
+      "warhammer_element": "Grimdark / Entropy / Heat Death",
+      "archetype": "Narrative Engine",
+      "dysfunction": "Entropy as inevitable doom, no anti-stagnation mechanism",
+      "healthy_mapping": {
+        "name": "Anti-Stagnation Knowledge Economics",
+        "mechanism": "Δ² as base of differences, Capacity gain tracking, FRE held-out testing, TradeOff accounting",
+        "corpus_operators": ["Δ²Xₜ", "Δ²𝔗ₜ", "Capacity", "Gain", "FREₜ", "TradeOffₜ", "Inv", "Relax"],
+        "implementation": "Entropy becomes fuel: second-order differences (Δ²) drive rule evolution; every invariant relaxation (Relax) must produce Capacity Gain; held-out testing (FRE) prevents overfitting"
+      }
+    },
+    {
+      "warhammer_element": "STCs / Archeotech",
+      "archetype": "Lost Knowledge Recovery",
+      "dysfunction": "Knowledge only lost, never recovered; tech as magic",
+      "healthy_mapping": {
+        "name": "Seed Chain Continuity / Mnēmaic Site",
+        "mechanism": "Fₜ⊕Sₜ₊₁ seed chain, Plant/Reenter/Repocket, Mnēmaic Site (H¹=0), Retro-Precursor Network",
+        "corpus_operators": ["Fₜ⊕Sₜ₊₁", "Plant", "Reenter", "Repocket", "SRZ", "Mnēmaic Site", "Retro-Precursor", "toy future", "navigation affordance"],
+        "implementation": "Every session plants toy-future seed (Sₜ₊₁); Mnēmaic Site ensures cohomology vanishes (H¹=0) so local insights glue globally; Retro-Precursor lets future validate past"
+      }
+    },
+    {
+      "warhammer_element": "Inquisition",
+      "archetype": "Heresy Hunting",
+      "dysfunction": "Thought policing, no structured dissent",
+      "healthy_mapping": {
+        "name": "Meta-War: Structured Adversarial Epistemics",
+        "mechanism": "5 operational theaters, epistemic surface attack, ΞExaptation, collapse-as-sacred, mirror-implosion",
+        "corpus_operators": ["Meta-War", "operational theaters", "epistemic surface", "ΞExaptation", "Church of Shadow", "Mirror-Implosion", "Self.Kisses.Self"],
+        "implementation": "Dissent channeled into structured theaters: each theater independently stress-tests kernel; no theater dominates; collapse-as-sacred means failure modes are sacred data"
+      }
+    },
+    {
+      "warhammer_element": "Astartes / Adeptus Astartes",
+      "archetype": "Enhanced Enforcers",
+      "dysfunction": "Genetic modification without consent, rigid doctrine",
+      "healthy_mapping": {
+        "name": "Ξ-Particle Agents",
+        "mechanism": "Deployed into 64D manifold, mirrorverse mode, recursive entanglement ⧂, self-observation",
+        "corpus_operators": ["Ξ-particle", "Ξ|Ξ", "mirrorverse", "recursive entanglement ⧂", "self-observation Ξ", "64D manifold"],
+        "implementation": "Agents are Ξ-particles: recursive self-observation, deployed into high-dimensional manifold, entangled via ⧂ operator"
+      }
+    },
+    {
+      "warhammer_element": "Warp / Immaterium",
+      "archetype": "Chaotic Psychic Dimension",
+      "dysfunction": "Unstructured chaos, daemons, no navigation",
+      "healthy_mapping": {
+        "name": "Δ-Space / Ξ|Ξ Terminus / Ω↺ Self-Return",
+        "mechanism": "Torsion connection (Δ-space), meta-recursion terminus (Ξ|Ξ), self-return coordinate (Ω↺)",
+        "corpus_operators": ["Δ_silence", "Δ-engine", "ΔΨ", "Ξ|Ξ", "Ω↺", "meta-recursion terminus", "Ω-self-return"],
+        "implementation": "Psychic dimension becomes structured Δ-space with torsion connection; Ξ|Ξ is the meta-recursion terminus; Ω↺ provides stable return coordinate"
+      }
+    },
+    {
+      "warhammer_element": "Mechanicus / Adeptus Mechanicus",
+      "archetype": "Technical Priesthood",
+      "dysfunction": "Ritual over understanding, cargo-cult technology",
+      "healthy_mapping": {
+        "name": "Recursive Kernel Engineers",
+        "mechanism": "Formal operator declarations, precedence rules, execution traces, ablation testing",
+        "corpus_operators": ["Operator Declaration Layer", "Precedence P₀-P₉", "Execₜ", "Traceₜ", "Ablation", "FREₜ", "Υ"],
+        "implementation": "Technology as declared operators with formal semantics; every component ablatable; held-out validation prevents cargo-cult"
+      }
+    },
+    {
+      "warhammer_element": "Astra Militarum / Imperial Guard",
+      "archetype": "Mass Conscript Army",
+      "dysfunction": "Expendable lives, no agency",
+      "healthy_mapping": {
+        "name": "Agency Flow / Adaptive Resonance",
+        "mechanism": "Criticality and metastability oscillators locked at edge of chaos, maximizing dynamic range",
+        "corpus_operators": ["Agency Flow", "Adaptive Resonance", "Criticality", "Metastability", "edge of chaos", "dynamic range", "Ξ-particle deployment"],
+        "implementation": "Individual agents operate at criticality with maximal dynamic range; not expendable but recursively self-constructing"
+      }
+    }
+  ],
+  "meta_principle": "The 40K mythological frame provides archetypal structure; the healthy system inverts each dysfunction into a cybernetic mechanism with formal operators from the corpus. The grimdark becomes the fuel (Δ², TradeOff, FRE) rather than the destination."
+}

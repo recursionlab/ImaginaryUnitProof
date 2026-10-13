@@ -1,0 +1,15 @@
+test_c11_and_c8_have_distinct_obligations (test_reference_slice.ReferenceSliceTests.test_c11_and_c8_have_distinct_obligations) ... ok
+test_cairn_and_relation_records_validate_against_schema (test_reference_slice.ReferenceSliceTests.test_cairn_and_relation_records_validate_against_schema) ... ok
+test_cairns_separate_representation_and_evidence_axes (test_reference_slice.ReferenceSliceTests.test_cairns_separate_representation_and_evidence_axes) ... ok
+test_cycle24_legacy_plan_is_rejected_as_misaligned (test_reference_slice.ReferenceSliceTests.test_cycle24_legacy_plan_is_rejected_as_misaligned) ... ok
+test_explicit_relevant_plan_aligns (test_reference_slice.ReferenceSliceTests.test_explicit_relevant_plan_aligns) ... ok
+test_governor_fire_drill_requires_regrounding_objective_and_artifacts (test_reference_slice.ReferenceSliceTests.test_governor_fire_drill_requires_regrounding_objective_and_artifacts) ... ok
+test_known_but_wrong_obligation_does_not_count_as_mapping (test_reference_slice.ReferenceSliceTests.test_known_but_wrong_obligation_does_not_count_as_mapping) ... ok
+test_missing_acceptance_test_cannot_pass (test_reference_slice.ReferenceSliceTests.test_missing_acceptance_test_cannot_pass) ... ok
+test_mrmd_relation_does_not_assert_identity (test_reference_slice.ReferenceSliceTests.test_mrmd_relation_does_not_assert_identity) ... ok
+test_p2_requires_measured_divergence_and_cited_replacement (test_reference_slice.ReferenceSliceTests.test_p2_requires_measured_divergence_and_cited_replacement) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.034s
+
+OK

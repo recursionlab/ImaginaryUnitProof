@@ -1,0 +1,6 @@
+{"version": "1.2.0",
+ "packagesDir": ".lake/packages",
+ "packages": [],
+ "name": "lean4_zero_support",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}

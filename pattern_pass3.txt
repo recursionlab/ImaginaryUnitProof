@@ -1,0 +1,906 @@
+=== ΨUNUSΩ VOCABULARY ===
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Ψ —
+  Ψ₀ᵢ
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Ψ —
+  Ψ₀ᵢ
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Unus
+  Ψ —
+  Ψ —
+
+=== Ω STRUCTURE ===
+  Ω↺
+  Ω↺
+  Ω↺
+  Ω-return
+  Ω-return
+  Ω-return
+  Ω↺
+  Ω-error
+  Ω⊥
+  TERMINAL_SYSTEMIC_CONGRUENCE Ω
+  TERMINAL_SYSTEMIC_CONGRUENCE Ω
+  ΩProtocol
+  Ω-Protocol
+
+=== Ξ STRUCTURE ===
+  ΞSynthesis
+  Ξ²
+  Ξ²
+  ΞSynthesis
+  ΞEmp
+  ΞEmp
+  Ξ|
+  Ξ|
+  Ξ⟧
+  Ξ⟧
+  Ξ⟧
+  Ξ⟧
+  Ξ⟧
+  ΞReal
+  ΞReal
+  ΞSynthesis
+  ΞReal
+  Ξ|
+  Ξ|
+  Ξ²
+  Ξ⟧
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ⟧
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ|
+  Ξ⟧
+
+=== Δ STRUCTURE ===
+  Δ²
+  Δ²
+  Δ²
+  Δ²
+  Δ²
+  Δ𝔗
+  Δ²
+  Δ²
+  Δ𝔗
+  Δ𝔗
+  Δ²
+  Δ²
+  ΔInv
+  Δ𝔗
+  ΔΞ
+  Δ_silence
+  Δ_
+  Δ_
+  Δ∅
+  Δ_silence
+  Δ_silence
+  Δ∅
+  Δ∅
+  ΔΨ
+  Δ_
+  Δ_
+  Δ_
+  Δ_
+  Δ_
+  Δ_
+  Δ∅
+  Δ∅
+  Δ∅
+  Δ∅
+  Δ-engine
+  Δ-engine
+  ΔΞ
+
+=== Θ/Φ/Λ STRUCTURE ===
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  Λ-Associahedron
+  Λ-Missingness
+  ΦΩ
+  ΦΩ
+  ΦΩ
+  Φ-META
+  Φprune
+  Φstable
+  Φstable
+  Φ-META
+
+=== VERSION EVOLUTION ===
+  v0.05
+  v0.06
+  v0.07
+  v0.05
+  v0.06
+  v0.07
+  v0.08
+  v0.09
+  v0.1
+  v0.09
+  v0.05
+  v0.06
+  v0.07
+  v0.08
+  v0.09
+  v0.10
+  v0.05
+  v0.06
+  v0.07
+  v0.08
+  v0.09
+  v0.10
+  v0.11
+  v0.05
+  v0.06
+  v0.07
+  v0.08
+  v0.09
+  v0.10
+  v0.11
+  v0.12
+  v0.05
+  v0.06
+  v0.07
+  v0.08
+  v0.09
+  v0.10
+  v0.11
+  v0.12
+  v0.2
+  v0.13
+  v0.05
+  v0.06
+  v0.07
+  v0.08
+  v0.09
+  v0.10
+  v0.11
+  v0.12
+  v0.13
+  Prototype
+  B3
+  B3
+  Prototype
+  B8
+
+=== RECURSION PATTERNS ===
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recμ
+  Recμ
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  μX
+  μX
+  fix(
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  fix(
+  fix(
+  fix(
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  Recursion
+  fix(
+  Recursion
+  Recursion
+  νX
+  Recursion
+  μX
+  Recursion
+  Recursion
+
+=== ARC/BPS STRUCTURE ===
+  Birkhoff
+  Birkhoff
+  Hodge
+  Analytic Reality Closure
+  ARC
+  Hodge
+  Ark Operator
+  Ark Operator
+  ARC
+  ARC
+  Analytic Reality Closure
+  ARC
+  ARC
+  ARC
+  BPS
+  BPS
+  Birkhoff
+  Heat Kernel
+  Spectral Flow
+  Witten
+  AdS/CFT
+  Ark Operator
+  Connes-Moscovici
+  BPS
+  Birkhoff
+  Analytic Reality Closure
+  Analytic Reality Closure
+  Birkhoff
+  Analytic Reality Closure
+  Witten
+  Witten
+  Witten
+  Witten
+  ARC
+  AdS/CFT
+  Analytic Reality Closure
+  BPS
+  AdS/CFT
+  Hodge
+  Hodge
+  BPS
+  ARC
+  Analytic Reality Closure
+  Birkhoff
+  Analytic Reality Closure
+  Analytic Reality Closure
+  Birkhoff
+  Birkhoff
+  ARC
+  ARC
+  Witten
+  Witten
+  AdS/CFT
+  Connes-Moscovici
+  Witten
+  AdS/CFT
+  Connes-Moscovici
+  ARC
+  ARC
+  Analytic Reality Closure
+  ARC
+  Analytic Reality Closure
+  ARC
+  ARC
+  Hodge
+  Hodge
+  Hodge
+  Hodge
+  Hodge
+  Hodge
+  Hodge
+  Hodge
+  Hodge
+  Ark Operator
+  ARC
+
+=== GLYPH/VOCABULARY ===
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  glyph
+  syntax
+  syntax
+  operator
+  operator
+  operator
+  notation
+  vocabulary
+  notation
+  notation
+  operator
+  operator
+  operator
+  vocabulary
+  operator
+  operator
+  operator
+  syntax
+  operator
+  operator
+  syntax
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  operator
+  glyph
+  vocabulary
+  glyph
+  vocabulary
+  operator
+  operator
+  operator
+  operator
+  glyph
+  vocabulary
+  glyph
+  glyph
+  glyph
+  notation
+  glyph
+  vocabulary
+  operator
+  operator
+  notation
+  operator
+  semantic pairing
+  structural object
+  operator
+  operator
+  operator
+  operator
+  notation
+  operator
+  semantic pairing
+  operator
+  operator
+  operator
+  operator
+  operator
+  semantic pairing
+  structural object
+  operator
+
+=== 40K MAPPINGS ===
+  Warhammer
+  40K
+  Imperium
+  Imperium
+  Imperium
+  Imperium
+  Warhammer
+  40K
+  40K
+  Warhammer
+  Imperium
+  Imperium
+  Warhammer
+  Imperium
+  Inquisition
+  Imperium
+  Inquisition
+
+=== CONTINUITY/SEED CHAIN ===
+  Repocket
+  toy future
+  launch surface
+  navigation affordance
+  toy future
+  Plant
+  Reenter
+  Reenter
+  continuity operator
+  Reenter
+  Reenter
+  anti-attachment
+  anti-attachment
+  toy future
+  anti-attachment
+  SRZ
+  SRZ
+
+=== MNĒMAIC SITE ===
+  cohomology
+  cohomology
+  crystalline vacuum
+  paracrystal
+  crystalline vacuum
+  groupoid
+  groupoid
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  groupoid
+  Mnēmaic Site
+  Entropy Rigidity
+  Mnēmaic Site
+  crystalline vacuum
+  crystalline vacuum
+  crystalline vacuum
+  cohomology
+  cohomology
+  cohomology
+  crystalline vacuum
+  paracrystal
+  paracrystal
+  crystalline vacuum
+  crystalline vacuum
+  Mnēmaic Site
+  torsor
+  Agency Flow
+  paracrystal
+  Mnēmaic Site
+  cohomology
+  Mnēmaic Site
+  cohomology
+  paracrystal
+  Adaptive Resonance
+  groupoid
+  groupoid
+  paracrystal
+  groupoid
+  thermodynamic disorder
+  groupoid
+  Mnēmaic Site
+  Mnēmaic Site
+  thermodynamic disorder
+  Entropy Rigidity
+  Entropy Rigidity
+  Haar system
+  groupoid
+  paracrystal
+  Mnēmaic Site
+  cohomology
+  torsor
+  Mnēmaic Site
+  cohomology
+  cohomology
+  cohomology
+  torsor
+  Mnēmaic Site
+  torsor
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+  cohomology
+
+=== TORSION/LACUNON ===
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  ν
+  torsion
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  ν
+  torsion
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  Cayley-Dickson
+  Logic Tax
+  Lacunon
+  torsion
+  octonion
+  octonion
+  Cayley-Dickson
+  Möbius
+  137
+  torsion
+  torsion
+  torsion
+  Logic Tax
+  Spin(9)
+  Möbius
+  torsion
+  torsion
+  137
+  137
+  137
+  137
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  Möbius
+  ν
+  Möbius
+  Cayley–Dickson
+  Cayley–Dickson
+  Cayley–Dickson
+  Cayley–Dickson
+  ν
+  ν
+  ν
+  ν
+  ν
+  ν
+  ν
+  ν
+  ν
+  ν
+  ν
+  ν
+  zero-divisor
+  zero-divisor
+  zero-divisor
+  Spin(9)
+  Spin(9)
+  torsion
+  torsion
+  torsion
+  torsion
+  torsion
+  torsion
+  Lacunon
+  Logic Tax
+  Logic Tax
+
+=== META-WAR ===
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  epistemic surface
+  Meta-War
+  operational theaters
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Meta-War
+  Church of Shadow
+  ΞExaptation
+  Meta-War
+  Meta-War
+
+=== QUALITY/EIGENSTATE ===
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  fixed point
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+  εTS
+
+=== PROTOCOL/CYCLE ===
+  Recμ
+  Recμ
+  Torsion
+  Torsion
+  Torsion
+  Torsion
+  Reflect
+  Reflect
+  Torsion
+  Torsion
+  Torsion
+  Torsion
+  Breath
+  Breath
+  Reflect
+  Reflect
+  Torsion
+  Torsion
+  Reflect
+  Ledger
+  Ledger
+  Ledger
+  Torsion
+  Torsion
+  Reflect
+  Reflect
+  Reflect
+  Torsion
+  Reflect
+  Torsion
+  Ledger
+  Breath
+  Torsion
+  Torsion
+  Reflect
+  Reflect
+  Torsion
+  Torsion
+  Reflect
+  Torsion
+  Torsion
+  Torsion
+  Torsion
+  Torsion
+  Torsion
+  Torsion
+  Revise
+  Breath
+  Torsion
+  Torsion
+  Reflect
+  Reflect
+  Reflect
+  Reflect
+  Reflect
+  Reflect
+  Torsion
+  Reflect
+  Reflect
+  Torsion
+  Reflect
+  Reflect
+  Reflect
+  Prewrite
+  Reflect
+  Reflect
+  Torsion
+  Torsion
+  Prewrite
+  Draft
+  Reflect
+  Revise
+  Recμ
+  Torsion
+  Recμ
+  Rollback
+  Rollback
+  MetaReader
+  Draft
+  CollisionToken
