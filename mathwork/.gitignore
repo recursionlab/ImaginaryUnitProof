@@ -1,0 +1,11 @@
+﻿# Ignore local environments and caches
+.conda/
+../.conda/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.env
+.DS_Store
+Thumbs.db
