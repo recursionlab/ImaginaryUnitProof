@@ -1,0 +1,53 @@
+{
+  "title": "Standalone phase-encoded gate contract audit",
+  "status": "REFERENCE_HARNESS_ONLY_NOT_ORIGINAL_NOTEBOOK_VALIDATION",
+  "truth_tables": {
+    "NOT": {
+      "0": 1,
+      "1": 0
+    },
+    "AND": {
+      "00": 0,
+      "01": 0,
+      "10": 0,
+      "11": 1
+    },
+    "XNOR_negative_control": {
+      "00": 1,
+      "01": 0,
+      "10": 0,
+      "11": 1
+    }
+  },
+  "phase_encoding": {
+    "bit_0_rad": 0.0,
+    "bit_1_rad": 3.141592653589793,
+    "decode_rule": "bit=1 iff cos(phi)<0"
+  },
+  "experiment": {
+    "fixed_seeds": [
+      73129,
+      84221,
+      95317,
+      106487,
+      117503
+    ],
+    "trials_per_truth_row_per_seed": 512,
+    "noise_sigma_radians": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25
+    ],
+    "noise_model": "independent zero-mean Gaussian phase noise on each input and output phase; phase readout by cosine half-plane",
+    "comparators": [
+      "correct NOT phase shift reference",
+      "always-HIGH NOT failure-signature control",
+      "AND Boolean truth-table reference",
+      "cosine phase-agreement/XNOR negative control"
+    ]
+  }
+}

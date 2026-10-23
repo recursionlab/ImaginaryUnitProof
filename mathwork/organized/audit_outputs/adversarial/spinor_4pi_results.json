@@ -1,0 +1,28 @@
+{
+  "no_T_flip": {
+    "amplitude": "|psi| is 2pi periodic (control)",
+    "spinor": {
+      "max_abs_sum": 1.5999999999999923,
+      "mean_abs_sum": 1.0796429896344906,
+      "min_abs_sum": 0.4705882352941175,
+      "interpretation": "sum ~ 0 => spinor sign flip at 2pi (4pi return); sum ~ 2*|psi| => 2pi-periodic"
+    },
+    "boundary_deviation_amp": 0.0
+  },
+  "with_T_flip": {
+    "amplitude_boundary_deviation": 0.0,
+    "spinor": {
+      "max_abs_sum": 1.5999999999999923,
+      "mean_abs_sum": 1.0796429896344906,
+      "min_abs_sum": 0.4705882352941175,
+      "interpretation": "sum ~ 0 => spinor sign flip at 2pi (4pi return); sum ~ 2*|psi| => 2pi-periodic"
+    },
+    "sign_flip_at_2pi": false,
+    "amplitude_2pi_periodic": false,
+    "verdict_4pi": "DEMONSTRATED if sign_flip_at_2pi=True AND amplitude_2pi_periodic=True (spinor flips sign, intensity periodic)"
+  },
+  "honest_framing": {
+    "what_this_tests": "anti-unitary T (conj on flipped edge) + flux-threaded loop; spinor sign flip on complex psi over 2pi.",
+    "claim_policy": "4pi demonstrated ONLY if with_T_flip.sign_flip_at_2pi=True AND amplitude-only metric stays vacuous (so the sign test is what carries it)."
+  }
+}

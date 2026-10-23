@@ -1,0 +1,281 @@
+{
+  "v": 1,
+  "savedAt": 1792658841800,
+  "mode": "multi",
+  "bigPictureUrl": "https://null.perchance.org/i-am-canceled-presents-macrohard-doors-os",
+  "hudMinimized": false,
+  "bpUiScale": 1,
+  "magnifier": false,
+  "magZoom": 3,
+  "envSkin": {
+    "walls": {
+      "kind": "concrete",
+      "tint": "#55606f",
+      "repeat": 9,
+      "rough": 0.85,
+      "metal": 0.06,
+      "glow": 0.1,
+      "url": ""
+    },
+    "ceiling": {
+      "kind": "grid",
+      "tint": "#3d4c5e",
+      "repeat": 16,
+      "rough": 0.9,
+      "metal": 0.1,
+      "glow": 0.5,
+      "url": ""
+    },
+    "floor": {
+      "kind": "grid",
+      "tint": "#1c242e",
+      "repeat": 22,
+      "rough": 0.7,
+      "metal": 0.2,
+      "glow": 0.45,
+      "url": ""
+    }
+  },
+  "monitors": {
+    "r0-c0": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r0-c1": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r0-c2": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r0-c3": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r0-c4": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r1-c0": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r1-c1": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r1-c2": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r1-c3": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r1-c4": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r2-c0": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r2-c1": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r2-c2": {
+      "type": "iframe",
+      "power": true,
+      "content": "",
+      "url": "https://null.perchance.org/i-am-canceled-presents-macrohard-doors-os",
+      "title": "Macrohard Doors OS",
+      "uploads": []
+    },
+    "r2-c3": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r2-c4": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r3-c0": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r3-c1": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r3-c2": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r3-c3": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r3-c4": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r4-c0": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r4-c1": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r4-c2": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r4-c3": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r4-c4": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r5-c0": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r5-c1": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r5-c2": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r5-c3": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    },
+    "r5-c4": {
+      "type": "memory",
+      "power": true,
+      "content": "",
+      "url": "",
+      "title": "",
+      "uploads": []
+    }
+  }
+}

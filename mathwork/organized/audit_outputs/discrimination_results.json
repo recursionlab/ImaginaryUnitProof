@@ -1,0 +1,84 @@
+{
+  "title": "Phase-rule discrimination + M3 + connectivity",
+  "status": "REPRODUCED_FROM_HANDOFF_EQUATIONS_NOT_THE_ORIGINAL_NOTEBOOK",
+  "audit_math_reproduction_expected": {
+    "phi_T_zero_max_abs_diff": 0.0,
+    "phi_T_0_7_max_abs_diff": 1.288435374475382,
+    "full_cycle_variance": 0.5
+  },
+  "audit_math_reproduction_achieved": true,
+  "m1_vs_m2_sweep": {
+    "phi_T_zero": {
+      "phi_target_rad": 0.0,
+      "phi_source_samples": 4096,
+      "w_M1_mean": -2.7755575615628914e-17,
+      "w_M1_variance": 0.5,
+      "w_M2_mean": -2.7755575615628914e-17,
+      "w_M2_variance": 0.5,
+      "max_abs_difference": 0.0,
+      "w_M1_at_phi_s_zero": 1.0,
+      "w_M2_at_phi_s_zero": 1.0
+    },
+    "phi_T_0_7": {
+      "phi_target_rad": 0.7,
+      "phi_source_samples": 4096,
+      "w_M1_mean": -1.1102230246251565e-16,
+      "w_M1_variance": 0.5,
+      "w_M2_mean": 0.0,
+      "w_M2_variance": 0.5,
+      "max_abs_difference": 1.2884353744753825,
+      "w_M1_at_phi_s_zero": 0.7648421872844885,
+      "w_M2_at_phi_s_zero": 0.7648421872844885
+    }
+  },
+  "m2_at_phi_T_zero_coincides_with_M1": true,
+  "m3_spinor": {
+    "definition": "psi(phi)=exp(i*phi/2); reference branch ref(phi)=exp(i*phi) (2 pi-periodic)",
+    "samples": {
+      "phi=0": {
+        "real": 1.0,
+        "imag": 0.0,
+        "intensity": 1.0
+      },
+      "phi=2pi": {
+        "real": -0.00019177100685708836,
+        "imag": 0.9999999816119403,
+        "intensity": 0.9999999999999998
+      },
+      "phi=4pi": {
+        "real": 1.0,
+        "imag": -2.4492935982947064e-16,
+        "intensity": 1.0
+      }
+    },
+    "amplitude_returns_at_4pi": true,
+    "intensity_mean": 1.0,
+    "intensity_range": 8.881784197001252e-16,
+    "intensity_only_periodic_2pi": true,
+    "interference_signal_periodic_under_2pi": false,
+    "verdict": "FAIL (intensity-only)"
+  },
+  "connectivity": {
+    "topology": "3-node path 0-1-2",
+    "phase_assignment_rad": [
+      0.0,
+      0.7,
+      1.4
+    ],
+    "weight_rule": "M1: w_ij = cos(phi_i - phi_j)",
+    "unweighted_laplacian_lambda2": 0.9999999999999998,
+    "directed_weighted_laplacian_eigenvalues_real": [
+      5.2987718736313944e-18,
+      0.7648421872844888,
+      2.2945265618534645
+    ],
+    "symmetrized_weighted_laplacian_lambda2": 0.7648421872844885,
+    "directed_min_real_nontrivial": 5.2987718736313944e-18,
+    "verdict": "MISMATCH \u2014 unweighted lambda2 characterizes the unweighted graph (path P3 -> 1.0), not the phase-weighted directed operator. Directed and symmetrized spectra differ."
+  },
+  "open_claims_not_reproduced": [
+    "M1 leakage=0.00% at delta_phi=+/-pi (raw cos(pi)=-1, full coupling; zero requires a clip rule)",
+    "M2 profile_variance=0.0946 (reconstructed raw-cosine full-cycle variance is 0.5 for both M1 and M2; measurement definition + M1 control missing)",
+    "M1/M2 max_transmitted_V_M=0.7989 (this package reproduces weight profiles, not the V_M transmission observable \u2014 separate code path)"
+  ]
+}

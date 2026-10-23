@@ -1,0 +1,80 @@
+{
+  "title": "Layered verdicts from ACTUAL notebook code (wallfield_actual.py verbatim) \u2014 logic / phase-model / physical kept separate",
+  "status": "VERIFIED_FROM_NOTEBOOK_SOURCE_NOT_TRANSCRIBED_APPROXIMATION",
+  "layer_definitions": {
+    "logic_test": "Is the test mechanism coherent and non-degenerate? (Does it actually vary the variable it claims to vary?)",
+    "phase_model_prediction": "Do the reproduced numbers (V[M] curves, leakage, variance, lambda2, M3 boundary) match the reported claims, and are they interpreted at the right mathematical layer?",
+    "physical_interpretation": "Does the evidence establish the physical claim (independent orientation DOF, one-way barrier, 4 pi double cover) or only an algebraic coincidence?"
+  },
+  "layers": {
+    "logic_gates_NOT_AND": {
+      "source": "ImaginaryUnit.ipynb cell 27 (simulate_noisy_not_gate, simulate_noisy_and_gate), run through the frozen per-row truth-table contract with amplitude>=0.5 -> HIGH",
+      "logic_test": {
+        "verdict": "FAIL",
+        "basis": "NOT candidate: input 0 row accuracy 1.0 (correct), input 1 row accuracy 0.0 (always HIGH) -> the input-1 row is wrong 100%; no inversion. AND candidate amplitude = |cos((phi_a-phi_b)/2)| => XNOR truth table: row 00 (truth=0) predicted HIGH at 0.0 accuracy (always wrong), rows 01/10/11 correct. Aggregate 50%/75% hides the exact broken rows.",
+        "reference_verdict": "Reference NOT/AND gates = 100% (contract intact); only the wave-logic candidates fail."
+      },
+      "phase_model_prediction": "N/A \u2014 cell-27 candidates are amplitude gates, not the weight-rule sweep.",
+      "physical_interpretation": "N/A"
+    },
+    "M1": {
+      "source": "ImaginaryUnit.ipynb cells 3,4,5 (RefactoredWallFieldSimulation.tickVField; 30 ticks, alpha=0.15; 50 phase points)",
+      "logic_test": {
+        "verdict": "PASS (coherent)",
+        "basis": "The M1 sweep is a non-degenerate phase-gating sweep; V[M] at +/-pi reaches 0.0 (min at edges)."
+      },
+      "phase_model_prediction": {
+        "verdict": "PARTIAL",
+        "basis": "Reproduces max_transmitted_V_M=0.7989364408479221, leakage_ratio=0.0, lambda_2=1.0 EXACTLY (matches scoring_verdict.json). But the reported '0% leakage at +/-pi' is a DYNAMIC diffusion result, not weight=0: gating=cos(pi)=-1 (full negative coupling), and V[M]=0 emerges because negative S->L flux cancels at M under the 30-tick dynamics. The hypothesis text claims 'V[M] drops to 0 when delta_phi approaches +/- pi' and conflates this with zero coupling; the boundary cos(pi)=-1 (not 0) is confirmed in discrimination_results.json. Leakage=0 is consistent with the dynamics but is NOT evidence that cos(\u00b1pi)=0.",
+        "reproduced_max_V_M": 0.7989364408479221,
+        "reproduced_leakage_ratio": 0.0,
+        "reproduced_lambda_2": 0.9999999999999998
+      },
+      "physical_interpretation": {
+        "verdict": "OPEN",
+        "basis": "Phase alignment gated diffusion is an algebraic/numerical observation in this scalar diffusion model. Whether it corresponds to a physical orientation degree of freedom or a topological blockade requires the independent symmetry/dynamical conditions noted in the audit; the simulation alone does not establish it."
+      }
+    },
+    "M2": {
+      "source": "ImaginaryUnit.ipynb cells 8,9,11,12 (M2WallFieldSimulation/M3LoopFieldSimulation; flip edge L<->M)",
+      "logic_test": {
+        "verdict": "FAIL (degenerate / null effect — T-flip never engages)",
+        "basis": "In the M2 sweep the flipped edge is L->M, but BOTH L and M are clamped to phase 0 while only S is swept. The flipped edge's source node (L) is at phase 0, so d_phi(flip) = -phi_L - phi_M = 0 equals d_phi(nonflip) = phi_L - phi_M = 0; gating cos(0)=1 identically, so the orientation-flip operator has ZERO observable effect on V[M]. Empirical check: corr(V_M_results, V_M_m2_results) = 1.0, mean |M1-M2| = 0.0, var(M1)=var(M2)=0.09464497511616608, max(M1)=max(M2)=0.7989364408479221.",
+        "m1_m2_correlation": 1.0,
+        "m1_m2_mean_abs_diff": 0.0,
+        "m1_variance": 0.09464497511616608,
+        "m2_variance": 0.09464497511616608
+      },
+      "phase_model_prediction": {
+        "verdict": "PARTIAL (reproduced, but meaningless as discrimination)",
+        "basis": "The reported profile_variance=0.0946 IS reproduced (0.09464497511616608) from the actual code. However that same variance is also M1's variance; the >0.01 PASS criterion is satisfied identically by M1 and M2. Variance>0.01 is true of any non-flat curve, so it cannot certify 'active phase gating across the flipped orientation boundary.'"
+      },
+      "physical_interpretation": {
+        "verdict": "NOT ESTABLISHED (vacuous)",
+        "basis": "M2 does not produce a different transmission profile from M1 (pointwise identical, corr=1.0). The flip is inert because it sits on a zero-phase source node, so the test never engages the orientation operator it purports to certify. A null-effect test cannot establish that orientation is an independent physical degree of freedom, that destructive interference is 'perfect,' or that one-way topological barriers exist. The PASS is smuggling: M2 is certified on a variance number M1 satisfies identically while the T-flip it claims to gate is byte-identical to the non-flipped path."
+      }
+    },
+    "M3": {
+      "source": "ImaginaryUnit.ipynb cells 11,12 (M3LoopFieldSimulation; closed 3-cycle 0-1-2-0; 1 flip on edge 2->0; 50 ticks; phi in [-2pi, 2pi])",
+      "logic_test": {
+        "verdict": "FAIL (flip inert + vacuous criterion)",
+        "basis": "Two independent defects. (1) Inert flip: the flipped edge is 2->0, whose SOURCE node (2) is clamped to phase 0, so d_phi(flip)=-phi_2-phi_0=-phi_0 equals d_phi(nonflip)=phi_2-phi_0=-phi_0 — the T-flip never engages on M3 either. (2) Vacuous boundary check: |V(phi=-6.2832) - V(phi=6.2832)| < 0.05 compares the SAME phase modulo 2*pi (both ==0 mod 2*pi), so it passes for ANY 2*pi-periodic or 4*pi-periodic system and cannot certify 4*pi periodicity. boundary_deviation = 0.0.",
+        "periodicity_conforms_to_4pi_reported": true
+      },
+      "phase_model_prediction": {
+        "verdict": "PARTIAL",
+        "basis": "Reproduces periodicity_conforms_to_4pi=True/boundary_deviation=0.0 from the actual code. But the spinor sign-flip (the real 4*pi signature) is invisible to V[2], an amplitude. See discrimination_tests.py: |psi|^2 is flat; only the phase-sensitive interference observable |psi+ref|^2 is non-2*pi-periodic."
+      },
+      "physical_interpretation": {
+        "verdict": "OPEN",
+        "basis": "M3 requires the orientation-flip operator to actually engage (the flipped edge must have a nonzero-phase source node) and a phase-sensitive relative/interference observable (or a true spinor sign test) — an amplitude-only boundary sample at coincident mod-2pi phases cannot certify 4*pi periodicity. The flip is currently inert."
+      }
+    }
+  },
+  "smuggling_summary": {
+    "M1_M2_transmission_identical": true,
+    "M1_M2_curves_correlation": 1.0,
+    "M1_M2_variances_identical": true,
+    "verdict": "M2 PASSes a variance>0.01 test that M1 satisfies identically, while the flipped edge's source node is clamped to phase 0 so the T-flip is inert in BOTH M2 and M3."
+  }
+}

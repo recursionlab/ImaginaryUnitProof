@@ -1,0 +1,2969 @@
+{
+  "title": "Standalone phase-encoded gate contract audit",
+  "status": "REFERENCE_HARNESS_ONLY_NOT_ORIGINAL_NOTEBOOK_VALIDATION",
+  "truth_tables": {
+    "NOT": {
+      "0": 1,
+      "1": 0
+    },
+    "AND": {
+      "00": 0,
+      "01": 0,
+      "10": 0,
+      "11": 1
+    },
+    "XNOR_negative_control": {
+      "00": 1,
+      "01": 0,
+      "10": 0,
+      "11": 1
+    }
+  },
+  "phase_encoding": {
+    "bit_0_rad": 0.0,
+    "bit_1_rad": 3.141592653589793,
+    "decode_rule": "bit=1 iff cos(phi)<0"
+  },
+  "experiment": {
+    "fixed_seeds": [
+      73129,
+      84221,
+      95317,
+      106487,
+      117503
+    ],
+    "trials_per_truth_row_per_seed": 512,
+    "noise_sigma_radians": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25
+    ],
+    "noise_model": "independent zero-mean Gaussian phase noise on each input and output phase; phase readout by cosine half-plane",
+    "comparators": [
+      "correct NOT phase shift reference",
+      "always-HIGH NOT failure-signature control",
+      "AND Boolean truth-table reference",
+      "cosine phase-agreement/XNOR negative control"
+    ]
+  },
+  "NOT": [
+    {
+      "sigma_rad": 0.0,
+      "n": 5120,
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            2560,
+            0
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 2560,
+        "FP": 0,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 1.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      },
+      "always_high_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "reference_accuracy": 1.0,
+          "always_high_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "reference_accuracy": 1.0,
+          "always_high_accuracy": 0.0
+        }
+      },
+      "input_counts": {
+        "0": 2560,
+        "1": 2560
+      }
+    },
+    {
+      "sigma_rad": 0.1,
+      "n": 5120,
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            2560,
+            0
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 2560,
+        "FP": 0,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 1.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      },
+      "always_high_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "reference_accuracy": 1.0,
+          "always_high_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "reference_accuracy": 1.0,
+          "always_high_accuracy": 0.0
+        }
+      },
+      "input_counts": {
+        "0": 2560,
+        "1": 2560
+      }
+    },
+    {
+      "sigma_rad": 0.25,
+      "n": 5120,
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            2560,
+            0
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 2560,
+        "FP": 0,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 1.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      },
+      "always_high_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "reference_accuracy": 1.0,
+          "always_high_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "reference_accuracy": 1.0,
+          "always_high_accuracy": 0.0
+        }
+      },
+      "input_counts": {
+        "0": 2560,
+        "1": 2560
+      }
+    },
+    {
+      "sigma_rad": 0.5,
+      "n": 5120,
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            2484,
+            76
+          ],
+          [
+            59,
+            2501
+          ]
+        ],
+        "TN": 2484,
+        "FP": 76,
+        "FN": 59,
+        "TP": 2501,
+        "n": 5120,
+        "accuracy": 0.9736328125,
+        "false_positive_rate": 0.0296875,
+        "false_negative_rate": 0.023046875
+      },
+      "always_high_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "reference_accuracy": 0.976953125,
+          "always_high_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "reference_accuracy": 0.9703125,
+          "always_high_accuracy": 0.0
+        }
+      },
+      "input_counts": {
+        "0": 2560,
+        "1": 2560
+      }
+    },
+    {
+      "sigma_rad": 0.75,
+      "n": 5120,
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            2218,
+            342
+          ],
+          [
+            374,
+            2186
+          ]
+        ],
+        "TN": 2218,
+        "FP": 342,
+        "FN": 374,
+        "TP": 2186,
+        "n": 5120,
+        "accuracy": 0.86015625,
+        "false_positive_rate": 0.13359375,
+        "false_negative_rate": 0.14609375
+      },
+      "always_high_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "reference_accuracy": 0.85390625,
+          "always_high_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "reference_accuracy": 0.86640625,
+          "always_high_accuracy": 0.0
+        }
+      },
+      "input_counts": {
+        "0": 2560,
+        "1": 2560
+      }
+    },
+    {
+      "sigma_rad": 1.0,
+      "n": 5120,
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            1852,
+            708
+          ],
+          [
+            631,
+            1929
+          ]
+        ],
+        "TN": 1852,
+        "FP": 708,
+        "FN": 631,
+        "TP": 1929,
+        "n": 5120,
+        "accuracy": 0.7384765625,
+        "false_positive_rate": 0.2765625,
+        "false_negative_rate": 0.246484375
+      },
+      "always_high_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "reference_accuracy": 0.753515625,
+          "always_high_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "reference_accuracy": 0.7234375,
+          "always_high_accuracy": 0.0
+        }
+      },
+      "input_counts": {
+        "0": 2560,
+        "1": 2560
+      }
+    },
+    {
+      "sigma_rad": 1.25,
+      "n": 5120,
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            1667,
+            893
+          ],
+          [
+            919,
+            1641
+          ]
+        ],
+        "TN": 1667,
+        "FP": 893,
+        "FN": 919,
+        "TP": 1641,
+        "n": 5120,
+        "accuracy": 0.64609375,
+        "false_positive_rate": 0.348828125,
+        "false_negative_rate": 0.358984375
+      },
+      "always_high_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "reference_accuracy": 0.641015625,
+          "always_high_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "reference_accuracy": 0.651171875,
+          "always_high_accuracy": 0.0
+        }
+      },
+      "input_counts": {
+        "0": 2560,
+        "1": 2560
+      }
+    }
+  ],
+  "AND": [
+    {
+      "sigma_rad": 0.0,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 0.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                2560
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 0,
+            "FP": 2560,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0,
+            "false_positive_rate": 1.0,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 1.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 1.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 1.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          }
+        }
+      },
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            7680,
+            0
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 7680,
+        "FP": 0,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 1.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      },
+      "xnor_phase_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5120,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 5120,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 0.75,
+        "false_positive_rate": 0.3333333333333333,
+        "false_negative_rate": 0.0
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 0.1,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 0.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                2560
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 0,
+            "FP": 2560,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0,
+            "false_positive_rate": 1.0,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 1.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 1.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 1.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          }
+        }
+      },
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            7680,
+            0
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 7680,
+        "FP": 0,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 1.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      },
+      "xnor_phase_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5120,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 5120,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 0.75,
+        "false_positive_rate": 0.3333333333333333,
+        "false_negative_rate": 0.0
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 0.25,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 0.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                2560
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 0,
+            "FP": 2560,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0,
+            "false_positive_rate": 1.0,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 0.998828125,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2557,
+                3
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2557,
+            "FP": 3,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.998828125,
+            "false_positive_rate": 0.001171875,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 0.998046875,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2555,
+                5
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2555,
+            "FP": 5,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.998046875,
+            "false_positive_rate": 0.001953125,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "reference_accuracy": 1.0,
+          "xnor_candidate_accuracy": 1.0,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          }
+        }
+      },
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            7680,
+            0
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 7680,
+        "FP": 0,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 1.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      },
+      "xnor_phase_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5112,
+            2568
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 5112,
+        "FP": 2568,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 0.74921875,
+        "false_positive_rate": 0.334375,
+        "false_negative_rate": 0.0
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 0.5,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.99921875,
+          "xnor_candidate_accuracy": 0.007421875,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2558,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2558,
+            "FP": 2,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.99921875,
+            "false_positive_rate": 0.00078125,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                19,
+                2541
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 19,
+            "FP": 2541,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.007421875,
+            "false_positive_rate": 0.992578125,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.9984375,
+          "xnor_candidate_accuracy": 0.93125,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2556,
+                4
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2556,
+            "FP": 4,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.9984375,
+            "false_positive_rate": 0.0015625,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2384,
+                176
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2384,
+            "FP": 176,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.93125,
+            "false_positive_rate": 0.06875,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.9953125,
+          "xnor_candidate_accuracy": 0.92265625,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2548,
+                12
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2548,
+            "FP": 12,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.9953125,
+            "false_positive_rate": 0.0046875,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2362,
+                198
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2362,
+            "FP": 198,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.92265625,
+            "false_positive_rate": 0.07734375,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "reference_accuracy": 0.996484375,
+          "xnor_candidate_accuracy": 0.9953125,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                9,
+                2551
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 9,
+            "TP": 2551,
+            "n": 2560,
+            "accuracy": 0.996484375,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.003515625
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                12,
+                2548
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 12,
+            "TP": 2548,
+            "n": 2560,
+            "accuracy": 0.9953125,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0046875
+          }
+        }
+      },
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            7662,
+            18
+          ],
+          [
+            9,
+            2551
+          ]
+        ],
+        "TN": 7662,
+        "FP": 18,
+        "FN": 9,
+        "TP": 2551,
+        "n": 10240,
+        "accuracy": 0.99736328125,
+        "false_positive_rate": 0.00234375,
+        "false_negative_rate": 0.003515625
+      },
+      "xnor_phase_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4765,
+            2915
+          ],
+          [
+            12,
+            2548
+          ]
+        ],
+        "TN": 4765,
+        "FP": 2915,
+        "FN": 12,
+        "TP": 2548,
+        "n": 10240,
+        "accuracy": 0.71416015625,
+        "false_positive_rate": 0.3795572916666667,
+        "false_negative_rate": 0.0046875
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 0.75,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.962890625,
+          "xnor_candidate_accuracy": 0.0765625,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2465,
+                95
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2465,
+            "FP": 95,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.962890625,
+            "false_positive_rate": 0.037109375,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                196,
+                2364
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 196,
+            "FP": 2364,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0765625,
+            "false_positive_rate": 0.9234375,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.93125,
+          "xnor_candidate_accuracy": 0.810546875,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2384,
+                176
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2384,
+            "FP": 176,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.93125,
+            "false_positive_rate": 0.06875,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2075,
+                485
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2075,
+            "FP": 485,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.810546875,
+            "false_positive_rate": 0.189453125,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.939453125,
+          "xnor_candidate_accuracy": 0.808203125,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2405,
+                155
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2405,
+            "FP": 155,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.939453125,
+            "false_positive_rate": 0.060546875,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2069,
+                491
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2069,
+            "FP": 491,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.808203125,
+            "false_positive_rate": 0.191796875,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "reference_accuracy": 0.898828125,
+          "xnor_candidate_accuracy": 0.915625,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                259,
+                2301
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 259,
+            "TP": 2301,
+            "n": 2560,
+            "accuracy": 0.898828125,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.101171875
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                216,
+                2344
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 216,
+            "TP": 2344,
+            "n": 2560,
+            "accuracy": 0.915625,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.084375
+          }
+        }
+      },
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            7254,
+            426
+          ],
+          [
+            259,
+            2301
+          ]
+        ],
+        "TN": 7254,
+        "FP": 426,
+        "FN": 259,
+        "TP": 2301,
+        "n": 10240,
+        "accuracy": 0.93310546875,
+        "false_positive_rate": 0.05546875,
+        "false_negative_rate": 0.101171875
+      },
+      "xnor_phase_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4340,
+            3340
+          ],
+          [
+            216,
+            2344
+          ]
+        ],
+        "TN": 4340,
+        "FP": 3340,
+        "FN": 216,
+        "TP": 2344,
+        "n": 10240,
+        "accuracy": 0.652734375,
+        "false_positive_rate": 0.4348958333333333,
+        "false_negative_rate": 0.084375
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 1.0,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.868359375,
+          "xnor_candidate_accuracy": 0.223046875,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2223,
+                337
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2223,
+            "FP": 337,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.868359375,
+            "false_positive_rate": 0.131640625,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                571,
+                1989
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 571,
+            "FP": 1989,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.223046875,
+            "false_positive_rate": 0.776953125,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.816015625,
+          "xnor_candidate_accuracy": 0.69296875,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2089,
+                471
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2089,
+            "FP": 471,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.816015625,
+            "false_positive_rate": 0.183984375,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1774,
+                786
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1774,
+            "FP": 786,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.69296875,
+            "false_positive_rate": 0.30703125,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.823828125,
+          "xnor_candidate_accuracy": 0.7,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2109,
+                451
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2109,
+            "FP": 451,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.823828125,
+            "false_positive_rate": 0.176171875,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1792,
+                768
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1792,
+            "FP": 768,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.7,
+            "false_positive_rate": 0.3,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "reference_accuracy": 0.69296875,
+          "xnor_candidate_accuracy": 0.773046875,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                786,
+                1774
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 786,
+            "TP": 1774,
+            "n": 2560,
+            "accuracy": 0.69296875,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.30703125
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                581,
+                1979
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 581,
+            "TP": 1979,
+            "n": 2560,
+            "accuracy": 0.773046875,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.226953125
+          }
+        }
+      },
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            6421,
+            1259
+          ],
+          [
+            786,
+            1774
+          ]
+        ],
+        "TN": 6421,
+        "FP": 1259,
+        "FN": 786,
+        "TP": 1774,
+        "n": 10240,
+        "accuracy": 0.80029296875,
+        "false_positive_rate": 0.16393229166666667,
+        "false_negative_rate": 0.30703125
+      },
+      "xnor_phase_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4137,
+            3543
+          ],
+          [
+            581,
+            1979
+          ]
+        ],
+        "TN": 4137,
+        "FP": 3543,
+        "FN": 581,
+        "TP": 1979,
+        "n": 10240,
+        "accuracy": 0.597265625,
+        "false_positive_rate": 0.461328125,
+        "false_negative_rate": 0.226953125
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 1.25,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.775390625,
+          "xnor_candidate_accuracy": 0.347265625,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1985,
+                575
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1985,
+            "FP": 575,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.775390625,
+            "false_positive_rate": 0.224609375,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                889,
+                1671
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 889,
+            "FP": 1671,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.347265625,
+            "false_positive_rate": 0.652734375,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.701171875,
+          "xnor_candidate_accuracy": 0.638671875,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1795,
+                765
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1795,
+            "FP": 765,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.701171875,
+            "false_positive_rate": 0.298828125,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1635,
+                925
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1635,
+            "FP": 925,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.638671875,
+            "false_positive_rate": 0.361328125,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "reference_accuracy": 0.708984375,
+          "xnor_candidate_accuracy": 0.630859375,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1815,
+                745
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1815,
+            "FP": 745,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.708984375,
+            "false_positive_rate": 0.291015625,
+            "false_negative_rate": null
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1615,
+                945
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1615,
+            "FP": 945,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.630859375,
+            "false_positive_rate": 0.369140625,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "reference_accuracy": 0.577734375,
+          "xnor_candidate_accuracy": 0.661328125,
+          "reference_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                1081,
+                1479
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 1081,
+            "TP": 1479,
+            "n": 2560,
+            "accuracy": 0.577734375,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.422265625
+          },
+          "xnor_candidate_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                867,
+                1693
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 867,
+            "TP": 1693,
+            "n": 2560,
+            "accuracy": 0.661328125,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.338671875
+          }
+        }
+      },
+      "reference": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5595,
+            2085
+          ],
+          [
+            1081,
+            1479
+          ]
+        ],
+        "TN": 5595,
+        "FP": 2085,
+        "FN": 1081,
+        "TP": 1479,
+        "n": 10240,
+        "accuracy": 0.6908203125,
+        "false_positive_rate": 0.271484375,
+        "false_negative_rate": 0.422265625
+      },
+      "xnor_phase_negative_control": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4139,
+            3541
+          ],
+          [
+            867,
+            1693
+          ]
+        ],
+        "TN": 4139,
+        "FP": 3541,
+        "FN": 867,
+        "TP": 1693,
+        "n": 10240,
+        "accuracy": 0.56953125,
+        "false_positive_rate": 0.4610677083333333,
+        "false_negative_rate": 0.338671875
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    }
+  ]
+}

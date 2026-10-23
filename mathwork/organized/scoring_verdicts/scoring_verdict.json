@@ -1,0 +1,22 @@
+{
+  "pre_registration": {
+    "test_id": "M1_PHASE_GATING_STAGE_1",
+    "purpose": "Verify if phase alignment gates diffusion capacity to distinguish H_operator from H_scalar.",
+    "hypotheses": {
+      "H_scalar": "Signal propagation depends on amplitude V only (V[M] is constant over delta_phi).",
+      "H_operator": "Signal propagation depends on both V and phi (V[M] drops to 0 when delta_phi approaches +/- pi)."
+    },
+    "kill_criterion": "If V[M] at delta_phi = +/- pi exceeds 10% of V[M] at delta_phi = 0, the operator-i phase-gating conjecture is KILLED."
+  },
+  "results": {
+    "max_transmitted_V_M": 0.7989364408479221,
+    "min_transmitted_V_M_at_pi": 0.0,
+    "leakage_ratio": 0.0,
+    "algebraic_connectivity_lambda_2": 0.9999999999999998
+  },
+  "verdict": {
+    "status": "PASS (Conjecture Validated in Simulation)",
+    "falsified": false,
+    "rationale": "Leakage ratio at delta_phi = +/- pi is 0.00%, which is below the 10.0% threshold."
+  }
+}

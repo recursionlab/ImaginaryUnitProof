@@ -1,0 +1,6 @@
+{
+  "wiring_rule": "POLARITY_REVERSAL",
+  "description": "For any physical connection marked as a T-operator flip, reverse the differential RX transimpedance amplifier lines at the receiver terminal (effectively flipping the sign of the physical voltage phase reference).",
+  "hardware_spec": "Swap Differential Pair RX+ and RX- on designated RJ45/SMA terminals.",
+  "fallback_virtual_shift_rad": 3.141592653589793
+}

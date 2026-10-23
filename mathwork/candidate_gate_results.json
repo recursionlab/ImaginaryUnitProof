@@ -1,0 +1,2674 @@
+{
+  "title": "Candidate phase-gate formulas vs frozen gate contract",
+  "status": "CANDIDATE_TESTING \u2014 candidates are the defect-class formulas, not the Boolean reference",
+  "disclaimer": "not_phase_candidate reproduces the documented failure signature (both inputs HIGH). and_phase_candidate_* reproduce the wave-logic bond gate W=w*cos(Delta_phi) with HIGH iff W>=0, which algebraically reduces to XNOR for the 0/pi encoding.",
+  "candidates": {
+    "NOT_phase_candidate": "always HIGH (failure signature from scoring_verdict transcript)",
+    "AND_phase_candidate_M1": "HIGH iff cos(phi_a - phi_b) >= 0  => XNOR truth table",
+    "AND_phase_candidate_M2": "HIGH iff cos(phi_a + phi_b) >= 0  => XNOR truth table (00,11 high; 01,10 low)"
+  },
+  "NOT": [
+    {
+      "sigma_rad": 0.0,
+      "n": 5120,
+      "candidate_NOT": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "candidate_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "candidate_accuracy": 0.0
+        }
+      }
+    },
+    {
+      "sigma_rad": 0.1,
+      "n": 5120,
+      "candidate_NOT": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "candidate_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "candidate_accuracy": 0.0
+        }
+      }
+    },
+    {
+      "sigma_rad": 0.25,
+      "n": 5120,
+      "candidate_NOT": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "candidate_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "candidate_accuracy": 0.0
+        }
+      }
+    },
+    {
+      "sigma_rad": 0.5,
+      "n": 5120,
+      "candidate_NOT": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "candidate_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "candidate_accuracy": 0.0
+        }
+      }
+    },
+    {
+      "sigma_rad": 0.75,
+      "n": 5120,
+      "candidate_NOT": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "candidate_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "candidate_accuracy": 0.0
+        }
+      }
+    },
+    {
+      "sigma_rad": 1.0,
+      "n": 5120,
+      "candidate_NOT": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "candidate_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "candidate_accuracy": 0.0
+        }
+      }
+    },
+    {
+      "sigma_rad": 1.25,
+      "n": 5120,
+      "candidate_NOT": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            0,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 0,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 5120,
+        "accuracy": 0.5,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "per_input": {
+        "0": {
+          "n": 2560,
+          "candidate_accuracy": 1.0
+        },
+        "1": {
+          "n": 2560,
+          "candidate_accuracy": 0.0
+        }
+      }
+    }
+  ],
+  "AND": [
+    {
+      "sigma_rad": 0.0,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.0,
+          "candidate_M2_accuracy": 0.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                2560
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 0,
+            "FP": 2560,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0,
+            "false_positive_rate": 1.0,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                2560
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 0,
+            "FP": 2560,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0,
+            "false_positive_rate": 1.0,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 1.0,
+          "candidate_M2_accuracy": 1.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 1.0,
+          "candidate_M2_accuracy": 1.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "candidate_M1_accuracy": 1.0,
+          "candidate_M2_accuracy": 1.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          }
+        }
+      },
+      "candidate_M1": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5120,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 5120,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 0.75,
+        "false_positive_rate": 0.3333333333333333,
+        "false_negative_rate": 0.0
+      },
+      "candidate_M2": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5120,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 5120,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 0.75,
+        "false_positive_rate": 0.3333333333333333,
+        "false_negative_rate": 0.0
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 0.1,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.0,
+          "candidate_M2_accuracy": 0.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                2560
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 0,
+            "FP": 2560,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0,
+            "false_positive_rate": 1.0,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                2560
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 0,
+            "FP": 2560,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0,
+            "false_positive_rate": 1.0,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 1.0,
+          "candidate_M2_accuracy": 1.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 1.0,
+          "candidate_M2_accuracy": 1.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "candidate_M1_accuracy": 1.0,
+          "candidate_M2_accuracy": 1.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          }
+        }
+      },
+      "candidate_M1": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5120,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 5120,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 0.75,
+        "false_positive_rate": 0.3333333333333333,
+        "false_negative_rate": 0.0
+      },
+      "candidate_M2": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5120,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 5120,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 0.75,
+        "false_positive_rate": 0.3333333333333333,
+        "false_negative_rate": 0.0
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 0.25,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.0,
+          "candidate_M2_accuracy": 0.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                2560
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 0,
+            "FP": 2560,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0,
+            "false_positive_rate": 1.0,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                2560
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 0,
+            "FP": 2560,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.0,
+            "false_positive_rate": 1.0,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 1.0,
+          "candidate_M2_accuracy": 1.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 1.0,
+          "candidate_M2_accuracy": 1.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2560,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2560,
+            "FP": 0,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "candidate_M1_accuracy": 1.0,
+          "candidate_M2_accuracy": 1.0,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2560
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 0,
+            "TP": 2560,
+            "n": 2560,
+            "accuracy": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          }
+        }
+      },
+      "candidate_M1": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5120,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 5120,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 0.75,
+        "false_positive_rate": 0.3333333333333333,
+        "false_negative_rate": 0.0
+      },
+      "candidate_M2": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5120,
+            2560
+          ],
+          [
+            0,
+            2560
+          ]
+        ],
+        "TN": 5120,
+        "FP": 2560,
+        "FN": 0,
+        "TP": 2560,
+        "n": 10240,
+        "accuracy": 0.75,
+        "false_positive_rate": 0.3333333333333333,
+        "false_negative_rate": 0.0
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 0.5,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.025390625,
+          "candidate_M2_accuracy": 0.028515625,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                65,
+                2495
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 65,
+            "FP": 2495,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.025390625,
+            "false_positive_rate": 0.974609375,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                73,
+                2487
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 73,
+            "FP": 2487,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.028515625,
+            "false_positive_rate": 0.971484375,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.971875,
+          "candidate_M2_accuracy": 0.973828125,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2488,
+                72
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2488,
+            "FP": 72,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.971875,
+            "false_positive_rate": 0.028125,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2493,
+                67
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2493,
+            "FP": 67,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.973828125,
+            "false_positive_rate": 0.026171875,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.973828125,
+          "candidate_M2_accuracy": 0.97578125,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2493,
+                67
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2493,
+            "FP": 67,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.973828125,
+            "false_positive_rate": 0.026171875,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2498,
+                62
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2498,
+            "FP": 62,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.97578125,
+            "false_positive_rate": 0.02421875,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "candidate_M1_accuracy": 0.9765625,
+          "candidate_M2_accuracy": 0.974609375,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                60,
+                2500
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 60,
+            "TP": 2500,
+            "n": 2560,
+            "accuracy": 0.9765625,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0234375
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                65,
+                2495
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 65,
+            "TP": 2495,
+            "n": 2560,
+            "accuracy": 0.974609375,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.025390625
+          }
+        }
+      },
+      "candidate_M1": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5046,
+            2634
+          ],
+          [
+            60,
+            2500
+          ]
+        ],
+        "TN": 5046,
+        "FP": 2634,
+        "FN": 60,
+        "TP": 2500,
+        "n": 10240,
+        "accuracy": 0.7369140625,
+        "false_positive_rate": 0.34296875,
+        "false_negative_rate": 0.0234375
+      },
+      "candidate_M2": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            5064,
+            2616
+          ],
+          [
+            65,
+            2495
+          ]
+        ],
+        "TN": 5064,
+        "FP": 2616,
+        "FN": 65,
+        "TP": 2495,
+        "n": 10240,
+        "accuracy": 0.73818359375,
+        "false_positive_rate": 0.340625,
+        "false_negative_rate": 0.025390625
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 0.75,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.1515625,
+          "candidate_M2_accuracy": 0.169140625,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                388,
+                2172
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 388,
+            "FP": 2172,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.1515625,
+            "false_positive_rate": 0.8484375,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                433,
+                2127
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 433,
+            "FP": 2127,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.169140625,
+            "false_positive_rate": 0.830859375,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.825,
+          "candidate_M2_accuracy": 0.83359375,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2112,
+                448
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2112,
+            "FP": 448,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.825,
+            "false_positive_rate": 0.175,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2134,
+                426
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2134,
+            "FP": 426,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.83359375,
+            "false_positive_rate": 0.16640625,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.829296875,
+          "candidate_M2_accuracy": 0.8375,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2123,
+                437
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2123,
+            "FP": 437,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.829296875,
+            "false_positive_rate": 0.170703125,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                2144,
+                416
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 2144,
+            "FP": 416,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.8375,
+            "false_positive_rate": 0.1625,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "candidate_M1_accuracy": 0.839453125,
+          "candidate_M2_accuracy": 0.829296875,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                411,
+                2149
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 411,
+            "TP": 2149,
+            "n": 2560,
+            "accuracy": 0.839453125,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.160546875
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                437,
+                2123
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 437,
+            "TP": 2123,
+            "n": 2560,
+            "accuracy": 0.829296875,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.170703125
+          }
+        }
+      },
+      "candidate_M1": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4623,
+            3057
+          ],
+          [
+            411,
+            2149
+          ]
+        ],
+        "TN": 4623,
+        "FP": 3057,
+        "FN": 411,
+        "TP": 2149,
+        "n": 10240,
+        "accuracy": 0.661328125,
+        "false_positive_rate": 0.398046875,
+        "false_negative_rate": 0.160546875
+      },
+      "candidate_M2": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4711,
+            2969
+          ],
+          [
+            437,
+            2123
+          ]
+        ],
+        "TN": 4711,
+        "FP": 2969,
+        "FN": 437,
+        "TP": 2123,
+        "n": 10240,
+        "accuracy": 0.6673828125,
+        "false_positive_rate": 0.3865885416666667,
+        "false_negative_rate": 0.170703125
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 1.0,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.321875,
+          "candidate_M2_accuracy": 0.305859375,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                824,
+                1736
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 824,
+            "FP": 1736,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.321875,
+            "false_positive_rate": 0.678125,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                783,
+                1777
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 783,
+            "FP": 1777,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.305859375,
+            "false_positive_rate": 0.694140625,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.682421875,
+          "candidate_M2_accuracy": 0.68125,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1747,
+                813
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1747,
+            "FP": 813,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.682421875,
+            "false_positive_rate": 0.317578125,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1744,
+                816
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1744,
+            "FP": 816,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.68125,
+            "false_positive_rate": 0.31875,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.697265625,
+          "candidate_M2_accuracy": 0.680078125,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1785,
+                775
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1785,
+            "FP": 775,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.697265625,
+            "false_positive_rate": 0.302734375,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1741,
+                819
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1741,
+            "FP": 819,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.680078125,
+            "false_positive_rate": 0.319921875,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "candidate_M1_accuracy": 0.66796875,
+          "candidate_M2_accuracy": 0.675,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                850,
+                1710
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 850,
+            "TP": 1710,
+            "n": 2560,
+            "accuracy": 0.66796875,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.33203125
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                832,
+                1728
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 832,
+            "TP": 1728,
+            "n": 2560,
+            "accuracy": 0.675,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.325
+          }
+        }
+      },
+      "candidate_M1": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4356,
+            3324
+          ],
+          [
+            850,
+            1710
+          ]
+        ],
+        "TN": 4356,
+        "FP": 3324,
+        "FN": 850,
+        "TP": 1710,
+        "n": 10240,
+        "accuracy": 0.5923828125,
+        "false_positive_rate": 0.4328125,
+        "false_negative_rate": 0.33203125
+      },
+      "candidate_M2": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4268,
+            3412
+          ],
+          [
+            832,
+            1728
+          ]
+        ],
+        "TN": 4268,
+        "FP": 3412,
+        "FN": 832,
+        "TP": 1728,
+        "n": 10240,
+        "accuracy": 0.585546875,
+        "false_positive_rate": 0.44427083333333334,
+        "false_negative_rate": 0.325
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "sigma_rad": 1.25,
+      "n": 10240,
+      "truth_table_rows": {
+        "00": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.428125,
+          "candidate_M2_accuracy": 0.42109375,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1096,
+                1464
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1096,
+            "FP": 1464,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.428125,
+            "false_positive_rate": 0.571875,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1078,
+                1482
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1078,
+            "FP": 1482,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.42109375,
+            "false_positive_rate": 0.57890625,
+            "false_negative_rate": null
+          }
+        },
+        "01": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.5921875,
+          "candidate_M2_accuracy": 0.58203125,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1516,
+                1044
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1516,
+            "FP": 1044,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.5921875,
+            "false_positive_rate": 0.4078125,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1490,
+                1070
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1490,
+            "FP": 1070,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.58203125,
+            "false_positive_rate": 0.41796875,
+            "false_negative_rate": null
+          }
+        },
+        "10": {
+          "n": 2560,
+          "truth_output": 0,
+          "candidate_M1_accuracy": 0.5984375,
+          "candidate_M2_accuracy": 0.573046875,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1532,
+                1028
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1532,
+            "FP": 1028,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.5984375,
+            "false_positive_rate": 0.4015625,
+            "false_negative_rate": null
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                1467,
+                1093
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "TN": 1467,
+            "FP": 1093,
+            "FN": 0,
+            "TP": 0,
+            "n": 2560,
+            "accuracy": 0.573046875,
+            "false_positive_rate": 0.426953125,
+            "false_negative_rate": null
+          }
+        },
+        "11": {
+          "n": 2560,
+          "truth_output": 1,
+          "candidate_M1_accuracy": 0.58125,
+          "candidate_M2_accuracy": 0.56875,
+          "candidate_M1_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                1072,
+                1488
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 1072,
+            "TP": 1488,
+            "n": 2560,
+            "accuracy": 0.58125,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.41875
+          },
+          "candidate_M2_confusion": {
+            "labels": {
+              "actual_rows": [
+                0,
+                1
+              ],
+              "predicted_columns": [
+                0,
+                1
+              ]
+            },
+            "matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                1104,
+                1456
+              ]
+            ],
+            "TN": 0,
+            "FP": 0,
+            "FN": 1104,
+            "TP": 1456,
+            "n": 2560,
+            "accuracy": 0.56875,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.43125
+          }
+        }
+      },
+      "candidate_M1": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4144,
+            3536
+          ],
+          [
+            1072,
+            1488
+          ]
+        ],
+        "TN": 4144,
+        "FP": 3536,
+        "FN": 1072,
+        "TP": 1488,
+        "n": 10240,
+        "accuracy": 0.55,
+        "false_positive_rate": 0.46041666666666664,
+        "false_negative_rate": 0.41875
+      },
+      "candidate_M2": {
+        "labels": {
+          "actual_rows": [
+            0,
+            1
+          ],
+          "predicted_columns": [
+            0,
+            1
+          ]
+        },
+        "matrix": [
+          [
+            4035,
+            3645
+          ],
+          [
+            1104,
+            1456
+          ]
+        ],
+        "TN": 4035,
+        "FP": 3645,
+        "FN": 1104,
+        "TP": 1456,
+        "n": 10240,
+        "accuracy": 0.53623046875,
+        "false_positive_rate": 0.474609375,
+        "false_negative_rate": 0.43125
+      },
+      "row_order": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    }
+  ]
+}

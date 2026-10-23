@@ -1,0 +1,38 @@
+row_id,experiment,recommended_disposition,already_resolved,duplicate_or_supersession,critical_note
+RV-0001,inertia_gate,accept,false,,preregistered negative; checker executed as stated
+RV-0002,j6_prime2d,accept,false,,negative as preregistered
+RV-0003,j7_canonical,accept,false,,all six checks reported
+RV-0019,prime_pic_64,accept,false,,Rota-Baxter undefined as specified; valid negative/definition audit
+RV-0020,prime_pic_64_v2,accept,false,,both weights fail; exact defects reported
+RV-0022,prime_pic_64_v2 (re-run),accept,false,duplicate of RV-0020,retain provenance; not independent evidence
+RV-0023,inertia_global,accept,false,,spec defect recorded
+RV-0025,prime_pic_64 (decisive),accept,false,,both sector gates fail; harness self-tests passed per brief
+RV-0026,pt_rotation,accept,false,,fails as stated; follow-up direction Helmholtz A^2
+RV-0027,prime_tree_audit,accept,false,,restoration not supported; K2 false
+RV-0028,pt_wave_gate,accept,false,superseded by RV-0030,retain correction provenance
+RV-0029,pt_phase,accept,false,,literal object dead; wave interpretation remains viable per brief
+RV-0030,pt_wave_gate_v2,accept,false,corrected/supersedes RV-0028,G1-G3 pass per corrected arithmetic
+RV-0031,pt_phase (refine),accept,false,refines RV-0029,gamma_c <= 0.05
+RV-0032,pt_threshold,accept,false,superseded by RV-0034,first bracket attempt unresolved
+RV-0033,pt_cubic,accept,false,refined by RV-0037,norm approximately N^3 defect recorded
+RV-0034,pt_threshold (bisect),accept,false,follow-up to RV-0032,both chains bracketed
+RV-0035,mixed_sign_tower,accept,false,,broad pass false; four knife-edge points
+RV-0036,order4_fork,accept,false,,one-half is control value; no prime information
+RV-0037,pt_cubic_norm,accept,false,normalizes/fixes specification from RV-0033,dimensionless gamma*=2.14e-4
+RV-0038,efe_dwarf_gate,already accepted,true,,K1/K2/K3 true; resolved_ts set
+RV-0039,pt_cubic_weighted,accept,false,,no exact PT symmetry on prime substrate
+RV-0040,mannheim_kterm,accept,false,,kappa ceiling 1.5e-4; leading-order R_max failure recorded
+RV-0041,mannheim_disk_gate,accept,false,baseline anchor for RV-0053,disk spread 1.099 < 1.2 at b=0.01
+RV-0042,soliton_profile,accept,false,,mass discrepancy 1.41e-2 recorded
+RV-0043,csv_anchor,hold,false,blocked input,CSV inputs/source paths absent
+RV-0044,source_feedback_gate,accept,false,anchor preserved in follow-ups,combined spread 1.062
+RV-0045,mannheim_disk,accept,false,duplicate of RV-0046,retain provenance; not independent evidence
+RV-0046,mannheim_disk (re-run),accept,false,duplicate of RV-0045,retain provenance; not independent evidence
+RV-0047,source_feedback_v2,accept,false,follow-up to RV-0044,anchor preserved
+RV-0048,mannheim_bessel,accept,false,,spread 1.031 across pass range per brief
+RV-0049,source_feedback_v3,accept,false,,three forms compared; anchor preserved
+RV-0050,source_feedback_v4,accept,false,,exponent sweep; anchor preserved
+RV-0051,csv_anchor (retry),hold,false,blocked retry of RV-0043,do not requeue until CSV source blocker resolved
+RV-0052,source_feedback_v5,accept,false,consistent with RV-0050,kappa=0; spread 1.0229
+RV-0053,mannheim_disk_bessel,flag,false,compare against RV-0041,Newtonian 0.5445 mismatches anchor 1.395; incident A1
+RV-0054,source_feedback_universality,accept with note,false,,universal pass false; 22/30 supports per-source only

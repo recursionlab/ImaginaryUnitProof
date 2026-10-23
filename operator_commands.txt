@@ -1,0 +1,15 @@
+# Run from repository root in process-enabled Code Mode.
+# Preflight current status and CLI multi-ID semantics first.
+# Execute sequentially; after each batch inspect exit code and resulting row statuses.
+
+python -m system.review accept RV-0001 RV-0002 RV-0003 RV-0019 RV-0020 RV-0022 RV-0023
+python -m system.review accept RV-0025 RV-0026 RV-0027 RV-0028 RV-0029 RV-0030 RV-0031
+python -m system.review accept RV-0032 RV-0033 RV-0034 RV-0035 RV-0036 RV-0037 RV-0039
+python -m system.review accept RV-0040 RV-0041 RV-0042 RV-0044 RV-0045 RV-0046 RV-0047
+python -m system.review accept RV-0048 RV-0049 RV-0050 RV-0052 RV-0054
+
+# Separate incident route; inspect A1 requirements before executing:
+python -m system.review flag RV-0053
+
+# Do not resubmit RV-0038 (already accepted).
+# Hold RV-0043 and RV-0051 until CSV inputs are located; do not requeue RV-0051 while blocked.

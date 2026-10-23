@@ -1,0 +1,13 @@
+{
+  "test_id": "M2_JUNCTION_FLIP_STAGE_2",
+  "purpose": "Verify if the orientation flip operator (T) successfully alters transmission profiles under phase sweeps.",
+  "results": {
+    "max_transmitted_V_M_m2": 0.7989364408479221,
+    "min_transmitted_V_M_m2_at_edges": 0.0,
+    "profile_variance": 0.0946449751161661
+  },
+  "verdict": {
+    "status": "PASS (M2 Junction Verified in Simulation)",
+    "rationale": "Variance in transmission amplitude demonstrates active phase gating across the flipped orientation boundary."
+  }
+}

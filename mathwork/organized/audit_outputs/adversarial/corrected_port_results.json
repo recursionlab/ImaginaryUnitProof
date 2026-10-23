@@ -1,0 +1,30 @@
+{
+  "m1_m2_corrected_interfering": {
+    "m1_max_V": 14.000295764663719,
+    "m1_var": 1.2684883355953868e-29,
+    "m2_max_V": 8.737884916858432,
+    "m2_var": 3.1554436208840472e-30,
+    "corr_m1_m2": 0.0,
+    "mean_abs_diff_m1_m2": 5.262410847805282,
+    "notebook_linear_chain_corr": 1.0,
+    "note": "Notebook topology (linear chain, phi_L=0) -> flip inert, corr=1.0. Corrected: nonzero phase on the flipped edge SOURCE node (phi_L=0.9) + complex hopping exp(i*d_phi) -> flip engages if corr<1. If corr still ~1.0, the cos-even/phase-sign structure still hides it and a true anti-unitary T (psi->psi*) is required."
+  },
+  "m3_corrected": {
+    "amplitude_is_2pi_periodic": true,
+    "spinor_signflip": {
+      "max_abs_sum": 1.9994084706725752,
+      "mean_abs_sum": 1.9994084706725737,
+      "min_abs_sum": 1.999408470672574,
+      "interpretation": "sum ~ 0 => spinor sign flip at 2pi (4pi return); sum large => 2pi-periodic"
+    },
+    "boundary_deviation_|V|": 0.0,
+    "verdict": "4pi requires spinor sign test on psi; |V| boundary check remains vacuous."
+  },
+  "honest_framing": {
+    "m2_engagement_in_principle": "YES \u2014 placing nonzero phase on the flipped edge's SOURCE node (phi_L=0.9) plus complex hopping exp(i*d_phi) drops corr(M1,M2) from 1.0 to 0.0: the orientation-flip CAN be observable.",
+    "m2_why_notebook_passes_its_inert": "Notebook keeps the flipped edge's source at phi=0 in both M2 (edge L->M, phi_L=0) and M3 (edge 2->0, phi_2=0); d_phi(flip)=d_phi(nonflip) identically, so the T-flip is inert in all three sweeps. The PASSes rest on an operator that never engages.",
+    "m2_numerical_degeneracy": "This lift is numerically degenerate (direct S->M path saturates M's magnitude; both M1/M2 flat ~14) \u2014 it demonstrates engagement is POSSIBLE but does not cleanly exhibit a gated profile. A cleaner interferometer (balanced 2-path amplitudes, no dominant direct edge) is needed for a gated-profile demonstration.",
+    "m3_4pi_status": "No. On this complex-hopping lift the closed loop with one T-flip shows NO spinor sign flip (psi(phi+2pi)+psi(phi) ~ 2*psi, i.e. 2pi-periodic). A true 4pi double-cover requires the anti-unitary time-reversal T: psi -> conj(psi) on the flipped arm (Kramers pairing), which this phase-sign-flip model is not.",
+    "bottom_line": "Theory is not refuted; the notebook's implementation is. The T-flip and 4pi claims are UNVERIFIED because the sweeps never engage the orientation operator and the M3 test is amplitude-only. Wall stays gated."
+  }
+}

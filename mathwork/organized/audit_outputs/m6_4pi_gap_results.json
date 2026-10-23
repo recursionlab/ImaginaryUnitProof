@@ -1,0 +1,48 @@
+{
+  "part_A_cell12_reproduction": {
+    "phi_start": -6.283185307179586,
+    "phi_end": 6.283185307179586,
+    "phi_start_mod_2pi": 0.0,
+    "phi_end_mod_2pi": 0.0,
+    "boundary_deviation": 0.0,
+    "boundary_check_passes": true,
+    "note": "Endpoints -2pi and +2pi differ by 4pi AND both == 0 mod 2pi"
+  },
+  "part_B_shift_analysis": {
+    "sweep_range": "[0.0, 25.132741228718345]",
+    "max_abs_diff_2pi_shift": 0.00022236949449094823,
+    "mean_abs_diff_2pi_shift": 8.517303067296689e-05,
+    "max_abs_diff_4pi_shift": 0.00028331458418795474,
+    "mean_abs_diff_4pi_shift": 0.00015898170026837528,
+    "both_approx_zero": false
+  },
+  "part_C_gating_structure": {
+    "v2_is_2pi_periodic": false,
+    "max_2pi_periodicity_diff": 0.00028331458418795474,
+    "gating_is_cos_even": true
+  },
+  "part_D_spinor_intensity": {
+    "intensity_mean": 1.0,
+    "intensity_range": 8.881784197001252e-16,
+    "intensity_only_periodic_2pi": true,
+    "amplitude_returns_at_4pi": true,
+    "interference_signal_periodic_under_2pi": false,
+    "verdict": "FAIL (intensity-only)"
+  },
+  "part_E_minimal_4pi_observable": {
+    "psi_definition": "psi(phi) = exp(i*phi/2)",
+    "sign_flip_detectable": true,
+    "max_abs_psi_plus_psi_2pi": 6.473657049138937e-16,
+    "min_abs_psi_minus_psi_2pi": 1.9999999999999996,
+    "max_abs_psi_minus_psi_4pi": 1.2008898127460164e-15,
+    "intensity_blind_to_sign_flip": true,
+    "intensity_diff_2pi": 6.661338147750939e-16,
+    "predicate": "exist interior phi: |psi(phi)+psi(phi+2pi)| < eps AND |psi(phi)-psi(phi+2pi)| > eps AND |psi(phi)-psi(phi+4pi)| < eps"
+  },
+  "part_F_conclusion": {
+    "v2_is_2pi_periodic": false,
+    "v2_trivially_4pi_periodic": false,
+    "cannot_certify_4pi": true,
+    "reason": "V[2] responds to cos(d_phi) (even, 2*pi-periodic, real-valued). It has no complex phase/sign degree of freedom to detect psi(phi+2pi) = -psi(phi). Both 2*pi and 4*pi shift differences are ~0, so V[2] cannot distinguish 2*pi from 4*pi."
+  }
+}

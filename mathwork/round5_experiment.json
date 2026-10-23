@@ -1,0 +1,101 @@
+{
+  "note": "wallfield_actual.py M2WallFieldSimulation; cell 9 setup preserved except the phi/flip variation under test.",
+  "layout": {
+    "S": 0,
+    "L": 1,
+    "M": 2,
+    "ticks": 30,
+    "alpha": 0.15,
+    "n_points": 50
+  },
+  "baseline_0_0946_reproduced": 0.09464497511616608,
+  "experiments": [
+    {
+      "variant": "M1_baseline_noFlip",
+      "label": "cell-4 layout; no flip; phi_L=phi_M=0",
+      "stats": {
+        "name": "M1_baseline_noFlip",
+        "max": 0.7989364408479221,
+        "min": 0.0,
+        "variance": 0.09464497511616608
+      },
+      "corr_with_base": null,
+      "mae_with_base": null
+    },
+    {
+      "variant": "M2_INERT_cell9",
+      "label": "cell 9 verbatim: flip L->M, phi_L=0, phi_M=0",
+      "stats": {
+        "name": "M2_INERT_cell9",
+        "max": 0.7989364408479221,
+        "min": 0.0,
+        "variance": 0.09464497511616608
+      },
+      "corr_with_base": 1.0,
+      "mae_with_base": 0.0
+    },
+    {
+      "variant": "M2_CORRECTED_phiL1_phiM0",
+      "label": "task option A: phi_L=1.0, phi_M=0, flip L->M",
+      "stats": {
+        "name": "M2_CORRECTED_phiL1_phiM0",
+        "max": 0.3036222071920645,
+        "min": 0.0,
+        "variance": 0.013638347755336662
+      },
+      "corr_with_base": 0.3957259261747667,
+      "mae_with_base": 0.21404310008960892
+    },
+    {
+      "variant": "M2_CORRECTED_flipS_L",
+      "label": "task option B: flip S->L, phi_L=0, phi_M=0",
+      "stats": {
+        "name": "M2_CORRECTED_flipS_L",
+        "max": 0.7989364408479221,
+        "min": 0.0,
+        "variance": 0.09464497511616608
+      },
+      "corr_with_base": 1.0,
+      "mae_with_base": 0.0
+    },
+    {
+      "variant": "M2_ENGAGED_phiL1_phiM05",
+      "label": "control: phi_L=1.0, phi_M=0.5, flip L->M (flip ON)",
+      "stats": {
+        "name": "M2_ENGAGED_phiL1_phiM05",
+        "max": 0.035776880306373576,
+        "min": 0.0,
+        "variance": 0.00018936496413660234
+      },
+      "corr_with_base": 0.3957259261747668,
+      "mae_with_base": 0.24405431620213933
+    },
+    {
+      "variant": "M2_ENGAGED_noflip",
+      "label": "control: phi_L=1.0, phi_M=0.5, NO flip",
+      "stats": {
+        "name": "M2_ENGAGED_noflip",
+        "max": 0.6233347480989675,
+        "min": 0.0,
+        "variance": 0.05748272778622046
+      },
+      "corr_with_base": 0.3957259261747668,
+      "mae_with_base": 0.21852902286635356
+    }
+  ],
+  "engagement_check": {
+    "description": "Does the flip operator actually engage (differ from non-flip) at phi_L=1.0, phi_M=0.5?",
+    "flip_on_vs_off_corr": 0.9999999999999996,
+    "flip_on_vs_off_mae": 0.18338963799020086,
+    "flip_on_vs_off_variance_gap": -0.05729336282208386
+  },
+  "cos_evenness_proof_optionA": {
+    "phi_L": 1.0,
+    "phi_M": 0.0,
+    "d_phi_flip_minus_phiL_minus_phiM": -1.0,
+    "d_phi_nonflip_phiL_minus_phiM": 1.0,
+    "gating_flip": 0.5403023058681398,
+    "gating_nonflip": 0.5403023058681398,
+    "gating_identical": true
+  }
+}
